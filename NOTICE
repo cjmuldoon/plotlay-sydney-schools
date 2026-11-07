@@ -26,7 +26,7 @@ UPSTREAM SOURCES
       https://data.nsw.gov.au/data/dataset/nsw-education-student-attendance-rate-by-school
     Changes: reshaped to one row per school per year; headcounts published as SP (5 or fewer) and attendance
     published as sp or na left blank, never filled in; contact columns and the Indigenous and language background
-    percentages removed; 81 schools in inner Sydney and Parramatta kept.
+    percentages removed (the ICSEA value is kept); 81 schools in inner Sydney and Parramatta kept.
 
   Cadastre and aerial imagery
     © State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW).

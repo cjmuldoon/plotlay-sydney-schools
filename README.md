@@ -26,6 +26,7 @@ The department publishes a code, a name, a location and 22 years of headcounts f
 - **New schools fill fast.** Inner Sydney High went from 147 students in 2020 to 1,161 in 2025. In 2025, 3,556 students were at schools opened since 2015 (2,893 of them in inner Sydney).
 - **The squeeze moved up.** Since 2019 primary enrolments in the study area fell 15.4% (24,389 to 20,641) and high school enrolments rose 13.0% (17,035 to 19,242, with Randwick Boys and Girls counted before their 2025 merger).
 - **Attendance.** Mean semester 1 attendance was 93.7% in 2019, 88.0% in 2022 and 90.3% in 2024 (all NSW government schools: 91.0%, 84.5%, 87.0%). 68 of 72 schools were below their 2019 rate in 2024. Ground per student and attendance show no clear link (Spearman −0.24, 66 schools).
+- **Not a measure of advantage.** The department's ICSEA (Index of Community Socio-Educational Advantage, where 1000 is the national average) for the three tightest compared schools: Inner Sydney High 1,104, Parramatta High 1,132, Arthur Phillip High 994. Across 68 compared schools the link between ground per student and ICSEA is weak (Spearman −0.31): more advantaged schools tend to have a little less ground per student, as many of them are inner-city schools. No cause is claimed. ICSEA is NSW Department of Education data from the same master dataset (CC BY).
 
 ![Ground per student, inner Sydney, 2025](visuals/hero_map_16x9.png)
 
