@@ -203,6 +203,14 @@ table Schools
 
 		annotation SummarizationSetBy = Automatic
 
+	column vertical
+		dataType: boolean
+		lineageTag: f57d2a71-930a-2bd4-fb08-9d9e36ae09cb
+		summarizeBy: none
+		sourceColumn: vertical
+
+		annotation SummarizationSetBy = Automatic
+
 	column compare
 		dataType: boolean
 		lineageTag: 98864e68-726a-6440-5a6f-642d82150862
@@ -234,8 +242,8 @@ table Schools
 				let
 				    Source = Csv.Document(GetFile("schools/schools.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
 				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
-				    Kept = Table.SelectColumns(Promoted, {"school_key", "school_name", "short_name", "suburb", "level", "opened", "latitude", "longitude", "grounds_m2", "shape_source", "lots", "outline_check", "compare", "note", "wkt"}),
-				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU")
+				    Kept = Table.SelectColumns(Promoted, {"school_key", "school_name", "short_name", "suburb", "level", "opened", "latitude", "longitude", "grounds_m2", "shape_source", "lots", "outline_check", "vertical", "compare", "note", "wkt"}),
+				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"vertical", type logical}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU")
 				in
 				    Typed
 

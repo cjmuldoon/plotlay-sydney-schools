@@ -66,7 +66,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Least ground per student (compared schools)'"
+                  "Value": "'Least grounds per student (compared schools; vertical schools not compared)'"
                 }
               }
             }

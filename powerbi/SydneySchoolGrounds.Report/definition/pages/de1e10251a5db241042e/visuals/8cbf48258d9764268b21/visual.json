@@ -23,11 +23,11 @@
                       "Entity": "Schools"
                     }
                   },
-                  "Property": "m2 per student"
+                  "Property": "Median m2 per student"
                 }
               },
-              "queryRef": "Schools.m2 per student",
-              "nativeQueryRef": "m2 per student"
+              "queryRef": "Schools.Median m2 per student",
+              "nativeQueryRef": "Median m2 per student"
             }
           ]
         }
@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Inner Sydney High, m² per student'"
+                  "Value": "'Median, all compared schools, m² per student'"
                 }
               }
             }
@@ -60,7 +60,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2370766a4d8221e6c745",
+        "name": "52ec874f5bf2954cbd80",
         "field": {
           "Column": {
             "Expression": {
@@ -68,7 +68,7 @@
                 "Entity": "Schools"
               }
             },
-            "Property": "school_name"
+            "Property": "compare"
           }
         },
         "type": "Categorical",
@@ -93,7 +93,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "school_name"
+                        "Property": "compare"
                       }
                     }
                   ],
@@ -101,7 +101,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Inner Sydney High School'"
+                          "Value": "true"
                         }
                       }
                     ]

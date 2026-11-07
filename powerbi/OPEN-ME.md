@@ -5,17 +5,17 @@
 ## What you need
 
 - Power BI Desktop for Windows, a recent version (2026). Projects and the PBIR report format are standard in current versions. If Desktop is older than about mid 2025, turn on **File, Options and settings, Options, Preview features, Power BI Project (.pbip) save option** and **Store reports using enhanced metadata format (PBIR)**, then restart Desktop.
-- The repo folder on the Windows machine. In Parallels the Mac home folder is shared, usually as `\\Mac\Home`, so the repo is at `\\Mac\Home\Projects_Local\plotlay-outputs\sydney-schools-repo` (or wherever you cloned it).
+- The repo folder on the Windows machine, wherever you cloned or unzipped it. On a Mac running Windows in Parallels the Mac home folder is shared, usually as `\\Mac\Home`.
 
 ## Open it
 
-1. In Windows, open File Explorer and go to the repo's `powerbi` folder (for example `\\Mac\Home\Projects_Local\plotlay-outputs\sydney-schools-repo\powerbi`).
+1. In Windows, open File Explorer and go to the repo's `powerbi` folder (wherever you cloned or unzipped `plotlay-sydney-schools`).
 2. Double-click `SydneySchoolGrounds.pbip`. If Windows asks which app, choose Power BI Desktop. Or in Desktop: **File, Open report, Browse reports**, set the file type to *Power BI project files (\*.pbip)* and pick it.
 3. The report opens with empty visuals the first time, because nothing has been loaded yet. Select **Refresh** on the Home ribbon.
    - By default the data is read from the repo's public copy on GitHub (`DataFolder` is `https://raw.githubusercontent.com/cjmuldoon/plotlay-sydney-schools/main/data/`). If Desktop asks how to connect to that address, choose **Anonymous** and **Connect**.
-   - To read the files from the folder on disk instead (no internet, or before the repo is public): **Home, Transform data, Edit parameters**, set `DataFolder` to the full path of the repo's `data` folder **ending with a backslash**, for example `\\Mac\Home\Projects_Local\plotlay-outputs\sydney-schools-repo\data\`, then **OK** and **Apply changes**. Power BI can't use a path relative to the project file, so this one parameter is the only place a folder is named.
+   - To read the files from the folder on disk instead (no internet, or before the repo is public): **Home, Transform data, Edit parameters**, set `DataFolder` to the full path of the repo's `data` folder **ending with a backslash**, for example `C:\Users\you\plotlay-sydney-schools\data\`, then **OK** and **Apply changes**. Power BI can't use a path relative to the project file, so this one parameter is the only place a folder is named.
    - If Desktop warns about privacy levels, choose **Ignore privacy levels** for this file (all the sources are public open data) or set both sources to Public.
-4. After the refresh the cards on the Overview page read Inner Sydney High at about 4.9 m² of grounds per student in 2025 and the medians match the README. If they do, everything is joined correctly.
+4. After the refresh the cards on the Overview page read a median of about 30.3 m² of grounds per student for primary schools and 34.7 m² for high schools in 2025 (compared schools), as in the README. If they do, everything is joined correctly.
 
 ## Two map settings Power BI asks for by hand
 
@@ -45,9 +45,9 @@ Capture at 1920 × 1080 (Windows display scaling 100%), with the Plotlay theme o
 | # | Shot | How | Length |
 |---|---|---|---|
 | 1 | Overview, 2025 | Year slicer on 2025, nothing selected | still |
-| 2 | Overview, 2020 | Year slicer on 2020: Inner Sydney High pale, newly opened | still |
+| 2 | Overview, 2020 | Year slicer on 2020: the new schools pale, newly opened | still |
 | 3 | The year stepping | Click 2015, 2018, 2020, 2022, 2025 on the slicer, about 1 s each | 6 to 8 s clip |
-| 4 | Drill-through | Right-click Inner Sydney High in the bar chart, **Drill through, School** | still, then a 3 s clip of the click |
+| 4 | Drill-through | Right-click Parramatta High in the bar chart, **Drill through, School** | still, then a 3 s clip of the click |
 | 5 | Map detail | Azure Maps with the reference layer, grayscale style | still |
 | 6 | Over time | The two line charts | still |
 | 7 | Model view | The four tables and their relationships | still |
