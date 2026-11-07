@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "53bf0a537c579fe5f757",
+  "position": {
+    "x": 1240,
+    "y": 110,
+    "z": 1,
+    "height": 160,
+    "width": 640,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Schools below 2019 attendance"
+                }
+              },
+              "queryRef": "Schools.Schools below 2019 attendance",
+              "nativeQueryRef": "Schools below 2019 attendance"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Schools below their 2019 attendance in 2024'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

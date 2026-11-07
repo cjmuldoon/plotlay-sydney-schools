@@ -1,0 +1,15 @@
+relationship 567aeb5d-d7ee-2422-85f2-f2103b513544
+	fromColumn: Enrolments.school_key
+	toColumn: Schools.school_key
+
+relationship 1c2aa51c-8674-9797-0bd3-f40f834422ab
+	fromColumn: Attendance.school_key
+	toColumn: Schools.school_key
+
+relationship e1dd0629-861e-90b3-d733-65edf0e98b19
+	fromColumn: Enrolments.year
+	toColumn: Years.year
+
+relationship c9cf0770-d3d7-8e72-0049-bae9de126096
+	fromColumn: Attendance.year
+	toColumn: Years.year

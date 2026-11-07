@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "5178c87ae65854b8fac5",
+  "displayName": "School",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "pageBinding": {
+    "name": "72829fc4-0ed3-653e-b908-a935565c3ef1",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "39672cc5-85cc-27e2-f240-1c27c60c3ff6",
+        "boundFilter": "4a1f80aa4b2a9ba13dab",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Schools"
+              }
+            },
+            "Property": "school_key"
+          }
+        }
+      }
+    ]
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4a1f80aa4b2a9ba13dab",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Schools"
+              }
+            },
+            "Property": "school_key"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  }
+}

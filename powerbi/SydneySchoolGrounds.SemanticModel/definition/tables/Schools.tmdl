@@ -1,0 +1,242 @@
+table Schools
+	lineageTag: b5fe5259-31dd-3b62-06e0-c1bbabecf0d5
+
+	/// Headcount for the schools and years in the filter
+	measure Students = SUM ( Enrolments[students] )
+		formatString: #,0
+		lineageTag: 78cfe164-1bdd-6073-3376-17a649cd06ba
+
+	/// Grounds of the schools with students in the year shown, so a school not yet open adds no land
+	measure 'Grounds m2' = SUMX ( FILTER ( Schools, CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ), Schools[grounds_m2] )
+		formatString: #,0
+		lineageTag: 209d34aa-ccbc-183a-2ff3-d625e131bf69
+
+	/// Grounds (land, including buildings) divided by students
+	measure 'm2 per student' = DIVIDE ( [Grounds m2], [Students] )
+		formatString: 0.0
+		lineageTag: 85a6bc5e-1d48-97a2-991c-8b5b3fd29ac9
+
+	measure 'Students per ha' = DIVIDE ( [Students], [Grounds m2] / 10000 )
+		formatString: #,0
+		lineageTag: c2bcc13c-9284-025c-7cec-81cbcbe2243e
+
+	measure 'Selected year' = SELECTEDVALUE ( Years[year], 2025 )
+		formatString: 0
+		lineageTag: 06e98748-48aa-c17d-2348-1f7055ed23c2
+
+	measure 'Students 2015' = CALCULATE ( [Students], Years[year] = 2015 )
+		formatString: #,0
+		displayFolder: Years
+		lineageTag: 7ec4cdd9-c2ec-d620-1a41-95dc6c4db1e0
+
+	measure 'Students 2019' = CALCULATE ( [Students], Years[year] = 2019 )
+		formatString: #,0
+		displayFolder: Years
+		lineageTag: ef6a873a-26f1-5fee-c1ad-48b1cb57b78e
+
+	measure 'Students 2025' = CALCULATE ( [Students], Years[year] = 2025 )
+		formatString: #,0
+		displayFolder: Years
+		lineageTag: 36009f1c-8327-e404-d99a-764ea3532e70
+
+	/// Blank for schools that opened after 2015
+	measure 'Growth since 2015 %' =
+			VAR a = [Students 2015]
+			VAR b = [Students 2025]
+			RETURN IF ( a > 0, DIVIDE ( b - a, a ) )
+		formatString: 0%
+		displayFolder: Years
+		lineageTag: db07f889-623b-a7e0-8615-cb299c66c79f
+
+	/// Median of the schools in the filter (filter compare = TRUE for the story medians)
+	measure 'Median m2 per student' =
+			MEDIANX (
+			    FILTER ( VALUES ( Schools[school_key] ), CALCULATE ( [Students] ) > 0 && CALCULATE ( [Grounds m2] ) > 0 ),
+			    CALCULATE ( [m2 per student] )
+			)
+		formatString: 0.0
+		lineageTag: 9bd27921-6ba7-1af4-fd4e-6caa9c11d6ce
+
+	measure 'm2 band' =
+			VAR v = [m2 per student]
+			RETURN SWITCH ( TRUE (), ISBLANK ( v ), BLANK (), v < 10, "1 under 10", v < 15, "2 10 to 15", v < 25, "3 15 to 25", v < 50, "4 25 to 50", "5 50 or more" )
+		displayFolder: Colour
+		lineageTag: 3d676c5d-edaf-ffa6-b683-9378024321cd
+
+	/// For conditional formatting by field value
+	measure 'm2 band colour' = SWITCH ( LEFT ( [m2 band], 1 ), "1", "#6b1a10", "2", "#b8321f", "3", "#e0714a", "4", "#f0aa82", "5", "#f8dcc6", "#cfcac0" )
+		displayFolder: Colour
+		lineageTag: 2e0d3d26-734f-5f5d-29f2-104a3209a873
+
+	/// A car space (AS/NZS 2890.1, class 1A) is 2.4 x 5.4 m
+	measure 'Car spaces per student' = DIVIDE ( [m2 per student], 12.96 )
+		formatString: 0.00
+		lineageTag: a71e114b-c114-32b5-2fd6-52bb52abb48b
+
+	/// Semester 1. No 2020 data; 2021 is not comparable (the department)
+	measure 'Attendance %' = AVERAGE ( Attendance[attendance_pct] )
+		formatString: 0.0
+		displayFolder: Attendance
+		lineageTag: cbea1638-bc88-2f46-6f64-cd0af89e16d3
+
+	measure 'Attendance 2019' = CALCULATE ( [Attendance %], Years[year] = 2019 )
+		formatString: 0.0
+		displayFolder: Attendance
+		lineageTag: 9e4bf708-b20a-87a4-0eca-40bee99da983
+
+	measure 'Attendance 2024' = CALCULATE ( [Attendance %], Years[year] = 2024 )
+		formatString: 0.0
+		displayFolder: Attendance
+		lineageTag: 1e224827-644b-6030-ff4a-e0d909750f87
+
+	measure 'Schools below 2019 attendance' =
+			COUNTROWS (
+			    FILTER ( VALUES ( Schools[school_key] ),
+			        NOT ISBLANK ( [Attendance 2019] ) && NOT ISBLANK ( [Attendance 2024] ) && [Attendance 2024] < [Attendance 2019] )
+			)
+		formatString: 0
+		displayFolder: Attendance
+		lineageTag: bc682b04-e58c-fe77-fd3b-1557880bc4b5
+
+	/// Drill-through page title
+	measure 'School title' = SELECTEDVALUE ( Schools[school_name], "Pick a school" ) & ", " & SELECTEDVALUE ( Schools[suburb] )
+		lineageTag: 1a00df34-858b-7211-d0c9-c51fe6d6d2ce
+
+	column school_key
+		dataType: int64
+		formatString: 0
+		lineageTag: ea911291-6320-3a34-cbca-4663b9be1a9b
+		summarizeBy: none
+		sourceColumn: school_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column school_name
+		dataType: string
+		lineageTag: 6815eb9a-8dc8-dab6-f066-fd574b4bdc8b
+		summarizeBy: none
+		sourceColumn: school_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column short_name
+		dataType: string
+		lineageTag: 0638dfc2-fef9-64b1-1430-22d18682d76a
+		summarizeBy: none
+		sourceColumn: short_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column suburb
+		dataType: string
+		lineageTag: 855b3b1c-023a-d587-7761-23f0e86e9631
+		summarizeBy: none
+		sourceColumn: suburb
+
+		annotation SummarizationSetBy = Automatic
+
+	column level
+		dataType: string
+		lineageTag: 489d9e28-deb5-764d-52cf-2f5c2aee9a46
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = Automatic
+
+	column opened
+		dataType: dateTime
+		formatString: d mmm yyyy
+		lineageTag: 9249639d-21d2-4b80-c899-e5663a5337ec
+		summarizeBy: none
+		sourceColumn: opened
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: ff42c3ce-afa2-2c5f-9e27-9f45bf25658f
+		summarizeBy: none
+		sourceColumn: latitude
+		dataCategory: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitude
+		dataType: double
+		lineageTag: bdfbb68c-d75c-0ca7-fb15-58cbd9b2296c
+		summarizeBy: none
+		sourceColumn: longitude
+		dataCategory: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column grounds_m2
+		dataType: double
+		formatString: #,0
+		lineageTag: 1329d72b-3ef0-48c9-e004-e63c34a65b33
+		summarizeBy: none
+		sourceColumn: grounds_m2
+
+		annotation SummarizationSetBy = Automatic
+
+	column shape_source
+		dataType: string
+		lineageTag: b852b2b8-11c4-c269-870e-dc422d98af49
+		summarizeBy: none
+		sourceColumn: shape_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column lots
+		dataType: string
+		lineageTag: 1dd6f444-3644-b87c-bfd1-a467037a2422
+		summarizeBy: none
+		sourceColumn: lots
+
+		annotation SummarizationSetBy = Automatic
+
+	column outline_check
+		dataType: string
+		lineageTag: 240e6076-7c36-a2f1-26f7-a5617ac21b49
+		summarizeBy: none
+		sourceColumn: outline_check
+
+		annotation SummarizationSetBy = Automatic
+
+	column compare
+		dataType: boolean
+		lineageTag: 98864e68-726a-6440-5a6f-642d82150862
+		summarizeBy: none
+		sourceColumn: compare
+
+		annotation SummarizationSetBy = Automatic
+
+	column note
+		dataType: string
+		lineageTag: 0f1b4946-66a3-15a1-59f2-885526ab1e25
+		summarizeBy: none
+		sourceColumn: note
+
+		annotation SummarizationSetBy = Automatic
+
+	column wkt
+		dataType: string
+		isHidden
+		lineageTag: 3d4ecff6-ca7c-b7ab-2999-3148a98ff369
+		summarizeBy: none
+		sourceColumn: wkt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Schools = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(GetFile("schools/schools.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"school_key", "school_name", "short_name", "suburb", "level", "opened", "latitude", "longitude", "grounds_m2", "shape_source", "lots", "outline_check", "compare", "note", "wkt"}),
+				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

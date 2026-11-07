@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "f75b8a2e8297e0664a8a",
+  "position": {
+    "x": 1240,
+    "y": 110,
+    "z": 1,
+    "height": 900,
+    "width": 640,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Schools.short_name",
+              "nativeQueryRef": "short_name"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Students 2015"
+                }
+              },
+              "queryRef": "Schools.Students 2015",
+              "nativeQueryRef": "Students 2015"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Students 2025"
+                }
+              },
+              "queryRef": "Schools.Students 2025",
+              "nativeQueryRef": "Students 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Growth since 2015 %"
+                }
+              },
+              "queryRef": "Schools.Growth since 2015 %",
+              "nativeQueryRef": "Growth since 2015 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "m2 per student"
+                }
+              },
+              "queryRef": "Schools.m2 per student",
+              "nativeQueryRef": "m2 per student"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Schools'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

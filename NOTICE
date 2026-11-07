@@ -1,0 +1,50 @@
+How much ground does each student get? NSW government schools in inner Sydney and Parramatta.
+Copyright 2026 Craig Muldoon. Made with Plotlay (https://www.getplotlay.com).
+
+This repository contains code, data we made, and data from the sources below.
+
+CODE
+  The notebook, the Power BI project (its Power Query, DAX and report files) and any scripts are licensed under the
+  MIT licence (LICENSE).
+
+DATA WE MADE
+  The school outlines in data/geometry/, the joined tables in data/schools/ (schools.csv, schools_joined_long.csv)
+  and the outline checklist are licensed under Creative Commons Attribution 4.0 International (LICENSE-DATA).
+  Please credit: "School outlines and tables: Plotlay (getplotlay.com), from NSW Department of Education and NSW
+  Spatial Services open data". They are made from the sources below, whose credits also apply.
+
+UPSTREAM SOURCES
+
+  School enrolment, attendance and school location data
+    NSW Department of Education (Centre for Education Statistics and Evaluation), data.nsw.gov.au.
+    Licensed under Creative Commons Attribution (CC BY), as stated on each dataset page.
+    - NSW public schools master dataset
+      https://data.nsw.gov.au/data/dataset/nsw-education-nsw-public-schools-master-dataset
+    - NSW government school enrolments by head count (2004 to 2025)
+      https://data.nsw.gov.au/data/dataset/nsw-education-nsw-government-school-enrolments-by-head-count
+    - Student attendance rate by individual government school (2011 to 2024)
+      https://data.nsw.gov.au/data/dataset/nsw-education-student-attendance-rate-by-school
+    Changes: reshaped to one row per school per year; headcounts published as SP (5 or fewer) and attendance
+    published as sp or na left blank, never filled in; contact columns and the Indigenous and language background
+    percentages removed; 81 schools in inner Sydney and Parramatta kept.
+
+  Cadastre and aerial imagery
+    © State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW).
+    Licensed under Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU),
+    https://creativecommons.org/licenses/by/3.0/au/
+    - NSW Cadastre (lot boundaries): the outlines of 75 schools are unions of the cadastre lots picked for them.
+    - NSW Imagery: the outlines of 6 schools were traced over it. No imagery tiles are included in this repository;
+      the images in visuals/ that show imagery carry this credit.
+
+  Vertical school facts
+    School Infrastructure NSW: Inner Sydney High School project update, February 2020; Arthur Phillip High School
+    project page. Cited, not copied.
+
+NOT INCLUDED
+  Nothing in this repository is derived from OpenStreetMap. No Google, Nearmap, Esri or Mapbox imagery was used.
+  The NSW coat of arms and department logos are not used, and nothing here implies endorsement by the NSW Department
+  of Education or Spatial Services.
+
+THIRD-PARTY SOFTWARE
+  The notebook uses pandas, GeoPandas, Shapely, pyproj and Matplotlib (installed from requirements.txt, each under its
+  own licence). Fonts in the visuals: IBM Plex Sans and IBM Plex Mono, SIL Open Font License 1.1.

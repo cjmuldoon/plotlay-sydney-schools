@@ -1,0 +1,16 @@
+model Model
+	culture: en-AU
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-AU
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DataFolder","GetFile","Schools","Enrolments","Attendance","Years"]
+
+ref table Schools
+ref table Enrolments
+ref table Attendance
+ref table Years
+
+ref cultureInfo en-AU

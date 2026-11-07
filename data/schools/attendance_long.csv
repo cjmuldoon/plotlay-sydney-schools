@@ -1,0 +1,947 @@
+school_key,school_name,year,attendance_pct
+8135,Parramatta High School,2011,91.5
+8892,Arthur Phillip High School,2011,88.7
+7442,Woollahra Public School,2011,96.1
+3305,Ultimo Public School,2011,94.7
+7404,Balmain Public School,2011,97.4
+2730,Neutral Bay Public School,2011,96.5
+8530,Newtown High School of Performing Arts,2011,92.6
+8326,Mosman High School,2011,92.9
+1937,Fort Street Public School,2011,93.3
+7408,Bourke Street Public School,2011,93.7
+4250,Randwick Public School,2011,95.8
+1042,Annandale North Public School,2011,95.5
+8133,North Sydney Girls High School,2011,98.3
+8507,Sydney Secondary College Leichhardt Campus,2011,91.2
+2283,Kensington Public School,2011,96.2
+8556,Alexandria Park Community School,2011,91.9
+8506,Tempe High School,2011,94.6
+8138,Sydney Girls High School,2011,96.1
+3935,Crown Street Public School,2011,94.6
+1485,Cammeray Public School,2011,95.7
+1616,Coogee Public School,2011,96.7
+1774,Drummoyne Public School,2011,95.0
+1932,Forest Lodge Public School,2011,96.1
+2766,North Sydney Public School,2011,95.8
+2840,Parramatta Public School,2011,96.0
+8132,North Sydney Boys High School,2011,95.7
+2843,Parramatta West Public School,2011,95.3
+4147,Erskineville Public School,2011,95.4
+7414,Darlinghurst Public School,2011,94.1
+7430,Mosman Public School,2011,96.6
+7423,Leichhardt Public School,2011,95.3
+7436,Stanmore Public School,2011,95.8
+7432,Paddington Public School,2011,96.2
+1240,Birchgrove Public School,2011,94.8
+2744,Newtown North Public School,2011,95.8
+7435,Rozelle Public School,2011,95.0
+2009,Glenmore Road Public School,2011,95.9
+1768,Double Bay Public School,2011,96.8
+1041,Annandale Public School,2011,95.6
+2543,Middle Harbour Public School,2011,97.0
+8137,Sydney Boys High School,2011,96.0
+7419,Glebe Public School,2011,93.3
+5104,Australia Street Infants School,2011,94.9
+2812,Orange Grove Public School,2011,93.3
+1735,Darlington Public School,2011,92.7
+5114,Ferncourt Public School,2011,96.1
+3840,Parramatta East Public School,2011,95.6
+8484,Sydney Secondary College Balmain Campus,2011,91.6
+8504,Fort Street High School,2011,96.8
+2189,Hunters Hill Public School,2011,96.4
+2930,Rainbow Street Public School,2011,94.5
+2749,Nicholson Street Public School,2011,95.9
+8540,Marrickville High School,2011,90.9
+7418,Gardeners Road Public School,2011,94.0
+1483,Camdenville Public School,2011,95.6
+4502,Petersham Public School,2011,94.2
+3948,Tempe Public School,2011,93.3
+8822,Macarthur Girls High School,2011,93.8
+2076,Greenwich Public School,2011,96.2
+4543,Wilkins Public School,2011,95.9
+4551,Plunkett Street Public School,2011,89.2
+3952,Marrickville Public School,2011,94.6
+7431,Newtown Public School,2011,94.5
+2499,Mascot Public School,2011,94.0
+4516,Eastlakes Public School,2011,94.9
+8263,J J Cahill Memorial High School,2011,85.2
+3032,St Peters Public School,2011,95.2
+5112,Taverners Hill Infants School,2011,96.0
+7413,Daceyville Public School,2011,94.4
+8147,Conservatorium High School,2011,96.6
+8135,Parramatta High School,2012,92.7
+8892,Arthur Phillip High School,2012,88.4
+7442,Woollahra Public School,2012,95.9
+3305,Ultimo Public School,2012,95.7
+7404,Balmain Public School,2012,96.3
+2730,Neutral Bay Public School,2012,96.0
+8530,Newtown High School of Performing Arts,2012,91.7
+8326,Mosman High School,2012,93.2
+1937,Fort Street Public School,2012,94.9
+7408,Bourke Street Public School,2012,91.5
+4250,Randwick Public School,2012,96.1
+1042,Annandale North Public School,2012,95.6
+8133,North Sydney Girls High School,2012,97.8
+8507,Sydney Secondary College Leichhardt Campus,2012,90.3
+2283,Kensington Public School,2012,95.8
+8556,Alexandria Park Community School,2012,90.2
+8506,Tempe High School,2012,94.5
+8138,Sydney Girls High School,2012,96.0
+3935,Crown Street Public School,2012,94.4
+1485,Cammeray Public School,2012,96.5
+1616,Coogee Public School,2012,96.2
+1774,Drummoyne Public School,2012,95.1
+1932,Forest Lodge Public School,2012,94.5
+2766,North Sydney Public School,2012,95.3
+2840,Parramatta Public School,2012,94.8
+8132,North Sydney Boys High School,2012,96.1
+2843,Parramatta West Public School,2012,94.5
+4147,Erskineville Public School,2012,95.7
+7414,Darlinghurst Public School,2012,95.6
+7430,Mosman Public School,2012,95.4
+7423,Leichhardt Public School,2012,95.2
+7436,Stanmore Public School,2012,95.1
+7432,Paddington Public School,2012,95.2
+1240,Birchgrove Public School,2012,95.7
+2744,Newtown North Public School,2012,95.9
+7435,Rozelle Public School,2012,94.9
+2009,Glenmore Road Public School,2012,95.8
+1768,Double Bay Public School,2012,96.2
+1041,Annandale Public School,2012,94.1
+2543,Middle Harbour Public School,2012,96.0
+8137,Sydney Boys High School,2012,96.4
+7419,Glebe Public School,2012,93.4
+5104,Australia Street Infants School,2012,94.1
+2812,Orange Grove Public School,2012,94.6
+1735,Darlington Public School,2012,92.8
+5114,Ferncourt Public School,2012,95.5
+3840,Parramatta East Public School,2012,95.0
+8484,Sydney Secondary College Balmain Campus,2012,92.4
+8504,Fort Street High School,2012,96.6
+2189,Hunters Hill Public School,2012,95.8
+2930,Rainbow Street Public School,2012,94.6
+2749,Nicholson Street Public School,2012,95.4
+8540,Marrickville High School,2012,90.4
+7418,Gardeners Road Public School,2012,93.9
+1483,Camdenville Public School,2012,94.6
+4502,Petersham Public School,2012,95.0
+3948,Tempe Public School,2012,93.5
+8822,Macarthur Girls High School,2012,93.3
+2076,Greenwich Public School,2012,95.5
+4543,Wilkins Public School,2012,95.5
+4551,Plunkett Street Public School,2012,87.8
+3952,Marrickville Public School,2012,93.5
+7431,Newtown Public School,2012,94.7
+2499,Mascot Public School,2012,93.8
+4516,Eastlakes Public School,2012,93.8
+8263,J J Cahill Memorial High School,2012,84.5
+3032,St Peters Public School,2012,96.1
+5112,Taverners Hill Infants School,2012,97.0
+7413,Daceyville Public School,2012,95.2
+8147,Conservatorium High School,2012,95.8
+8135,Parramatta High School,2013,92.8
+8892,Arthur Phillip High School,2013,91.7
+7442,Woollahra Public School,2013,95.7
+3305,Ultimo Public School,2013,96.0
+7404,Balmain Public School,2013,95.7
+2730,Neutral Bay Public School,2013,95.5
+8530,Newtown High School of Performing Arts,2013,92.6
+8326,Mosman High School,2013,93.2
+1937,Fort Street Public School,2013,93.1
+7408,Bourke Street Public School,2013,95.6
+4250,Randwick Public School,2013,96.6
+1042,Annandale North Public School,2013,95.8
+8133,North Sydney Girls High School,2013,98.3
+8507,Sydney Secondary College Leichhardt Campus,2013,93.5
+2283,Kensington Public School,2013,96.3
+8556,Alexandria Park Community School,2013,93.1
+8506,Tempe High School,2013,94.9
+8138,Sydney Girls High School,2013,96.6
+3935,Crown Street Public School,2013,95.4
+1485,Cammeray Public School,2013,96.6
+1616,Coogee Public School,2013,96.9
+1774,Drummoyne Public School,2013,95.6
+1932,Forest Lodge Public School,2013,95.9
+2766,North Sydney Public School,2013,96.0
+2840,Parramatta Public School,2013,96.3
+8132,North Sydney Boys High School,2013,96.7
+2843,Parramatta West Public School,2013,94.9
+4147,Erskineville Public School,2013,96.1
+7414,Darlinghurst Public School,2013,94.8
+7430,Mosman Public School,2013,95.5
+7423,Leichhardt Public School,2013,95.8
+7436,Stanmore Public School,2013,95.5
+7432,Paddington Public School,2013,95.4
+1240,Birchgrove Public School,2013,96.2
+2744,Newtown North Public School,2013,96.3
+7435,Rozelle Public School,2013,96.2
+2009,Glenmore Road Public School,2013,96.4
+1768,Double Bay Public School,2013,96.4
+1041,Annandale Public School,2013,94.9
+2543,Middle Harbour Public School,2013,96.2
+8137,Sydney Boys High School,2013,96.6
+7419,Glebe Public School,2013,93.6
+5104,Australia Street Infants School,2013,96.8
+2812,Orange Grove Public School,2013,94.8
+1735,Darlington Public School,2013,93.5
+5114,Ferncourt Public School,2013,95.1
+3840,Parramatta East Public School,2013,95.9
+8484,Sydney Secondary College Balmain Campus,2013,94.2
+8504,Fort Street High School,2013,96.7
+2189,Hunters Hill Public School,2013,95.6
+2930,Rainbow Street Public School,2013,95.8
+2749,Nicholson Street Public School,2013,95.7
+8540,Marrickville High School,2013,88.7
+7418,Gardeners Road Public School,2013,95.6
+1483,Camdenville Public School,2013,94.9
+4502,Petersham Public School,2013,94.8
+3948,Tempe Public School,2013,94.1
+8822,Macarthur Girls High School,2013,94.9
+2076,Greenwich Public School,2013,97.0
+4543,Wilkins Public School,2013,95.8
+4551,Plunkett Street Public School,2013,91.2
+3952,Marrickville Public School,2013,93.8
+7431,Newtown Public School,2013,95.6
+2499,Mascot Public School,2013,94.6
+4516,Eastlakes Public School,2013,94.0
+8263,J J Cahill Memorial High School,2013,85.5
+3032,St Peters Public School,2013,96.1
+5112,Taverners Hill Infants School,2013,96.3
+7413,Daceyville Public School,2013,93.9
+8147,Conservatorium High School,2013,96.9
+8135,Parramatta High School,2014,94.7
+8892,Arthur Phillip High School,2014,90.6
+7442,Woollahra Public School,2014,96.9
+3305,Ultimo Public School,2014,96.4
+7404,Balmain Public School,2014,96.2
+2730,Neutral Bay Public School,2014,96.1
+8530,Newtown High School of Performing Arts,2014,93.2
+8326,Mosman High School,2014,93.7
+1937,Fort Street Public School,2014,92.0
+7408,Bourke Street Public School,2014,95.4
+4250,Randwick Public School,2014,97.1
+1042,Annandale North Public School,2014,96.8
+8133,North Sydney Girls High School,2014,98.2
+8507,Sydney Secondary College Leichhardt Campus,2014,92.8
+2283,Kensington Public School,2014,96.4
+8556,Alexandria Park Community School,2014,90.9
+8506,Tempe High School,2014,94.7
+8138,Sydney Girls High School,2014,97.0
+3935,Crown Street Public School,2014,95.8
+1485,Cammeray Public School,2014,96.4
+1616,Coogee Public School,2014,97.1
+1774,Drummoyne Public School,2014,96.1
+1932,Forest Lodge Public School,2014,96.0
+2766,North Sydney Public School,2014,95.9
+2840,Parramatta Public School,2014,96.7
+8132,North Sydney Boys High School,2014,97.0
+2843,Parramatta West Public School,2014,95.8
+4147,Erskineville Public School,2014,96.3
+7414,Darlinghurst Public School,2014,95.4
+7430,Mosman Public School,2014,96.1
+7423,Leichhardt Public School,2014,96.9
+7436,Stanmore Public School,2014,95.7
+7432,Paddington Public School,2014,96.6
+1240,Birchgrove Public School,2014,97.0
+2744,Newtown North Public School,2014,95.7
+7435,Rozelle Public School,2014,95.9
+2009,Glenmore Road Public School,2014,97.4
+1768,Double Bay Public School,2014,96.6
+1041,Annandale Public School,2014,93.9
+2543,Middle Harbour Public School,2014,96.6
+8137,Sydney Boys High School,2014,97.1
+7419,Glebe Public School,2014,94.2
+5104,Australia Street Infants School,2014,97.1
+2812,Orange Grove Public School,2014,95.2
+1735,Darlington Public School,2014,94.0
+5114,Ferncourt Public School,2014,96.2
+3840,Parramatta East Public School,2014,95.9
+8484,Sydney Secondary College Balmain Campus,2014,91.7
+8504,Fort Street High School,2014,96.6
+2189,Hunters Hill Public School,2014,96.3
+2930,Rainbow Street Public School,2014,96.5
+2749,Nicholson Street Public School,2014,96.2
+8540,Marrickville High School,2014,89.8
+7418,Gardeners Road Public School,2014,94.7
+1483,Camdenville Public School,2014,93.4
+4502,Petersham Public School,2014,94.5
+3948,Tempe Public School,2014,94.3
+8822,Macarthur Girls High School,2014,94.2
+2076,Greenwich Public School,2014,96.9
+4543,Wilkins Public School,2014,95.8
+4551,Plunkett Street Public School,2014,88.8
+3952,Marrickville Public School,2014,94.4
+7431,Newtown Public School,2014,96.3
+2499,Mascot Public School,2014,93.9
+4516,Eastlakes Public School,2014,93.4
+8263,J J Cahill Memorial High School,2014,86.1
+3032,St Peters Public School,2014,95.6
+5112,Taverners Hill Infants School,2014,97.4
+7413,Daceyville Public School,2014,94.5
+8147,Conservatorium High School,2014,97.2
+8135,Parramatta High School,2015,93.5
+8892,Arthur Phillip High School,2015,90.3
+7442,Woollahra Public School,2015,96.4
+3305,Ultimo Public School,2015,95.3
+7404,Balmain Public School,2015,95.8
+2730,Neutral Bay Public School,2015,95.9
+8530,Newtown High School of Performing Arts,2015,92.6
+8326,Mosman High School,2015,93.3
+1937,Fort Street Public School,2015,94.1
+7408,Bourke Street Public School,2015,94.7
+4250,Randwick Public School,2015,95.4
+1042,Annandale North Public School,2015,96.4
+8133,North Sydney Girls High School,2015,97.8
+8507,Sydney Secondary College Leichhardt Campus,2015,92.2
+2283,Kensington Public School,2015,95.5
+8556,Alexandria Park Community School,2015,91.0
+8506,Tempe High School,2015,94.3
+8138,Sydney Girls High School,2015,96.7
+3935,Crown Street Public School,2015,95.0
+1485,Cammeray Public School,2015,94.5
+1616,Coogee Public School,2015,95.9
+1774,Drummoyne Public School,2015,95.7
+1932,Forest Lodge Public School,2015,95.0
+2766,North Sydney Public School,2015,95.0
+2840,Parramatta Public School,2015,94.8
+8132,North Sydney Boys High School,2015,96.9
+2843,Parramatta West Public School,2015,94.0
+4147,Erskineville Public School,2015,96.7
+7414,Darlinghurst Public School,2015,95.2
+7430,Mosman Public School,2015,95.9
+7423,Leichhardt Public School,2015,96.1
+7436,Stanmore Public School,2015,94.4
+7432,Paddington Public School,2015,94.8
+1240,Birchgrove Public School,2015,95.6
+2744,Newtown North Public School,2015,95.9
+7435,Rozelle Public School,2015,95.6
+2009,Glenmore Road Public School,2015,95.0
+1768,Double Bay Public School,2015,95.4
+1041,Annandale Public School,2015,93.5
+2543,Middle Harbour Public School,2015,95.9
+8137,Sydney Boys High School,2015,96.4
+7419,Glebe Public School,2015,93.9
+5104,Australia Street Infants School,2015,96.2
+2812,Orange Grove Public School,2015,95.3
+1735,Darlington Public School,2015,93.4
+5114,Ferncourt Public School,2015,95.2
+3840,Parramatta East Public School,2015,94.8
+8484,Sydney Secondary College Balmain Campus,2015,92.0
+8504,Fort Street High School,2015,96.9
+2189,Hunters Hill Public School,2015,95.8
+2930,Rainbow Street Public School,2015,95.1
+2749,Nicholson Street Public School,2015,95.1
+8540,Marrickville High School,2015,90.3
+7418,Gardeners Road Public School,2015,94.8
+1483,Camdenville Public School,2015,94.2
+4502,Petersham Public School,2015,95.7
+3948,Tempe Public School,2015,93.1
+8822,Macarthur Girls High School,2015,92.7
+2076,Greenwich Public School,2015,95.7
+4543,Wilkins Public School,2015,94.6
+4551,Plunkett Street Public School,2015,93.8
+3952,Marrickville Public School,2015,93.4
+7431,Newtown Public School,2015,94.7
+2499,Mascot Public School,2015,94.2
+4516,Eastlakes Public School,2015,92.6
+8263,J J Cahill Memorial High School,2015,87.6
+3032,St Peters Public School,2015,94.8
+5112,Taverners Hill Infants School,2015,94.4
+7413,Daceyville Public School,2015,93.8
+8147,Conservatorium High School,2015,97.0
+8910,Cammeraygal High School,2015,95.8
+8135,Parramatta High School,2016,94.6
+8892,Arthur Phillip High School,2016,90.2
+7442,Woollahra Public School,2016,93.9
+3305,Ultimo Public School,2016,93.6
+7404,Balmain Public School,2016,96.5
+2730,Neutral Bay Public School,2016,94.6
+8530,Newtown High School of Performing Arts,2016,94.8
+8326,Mosman High School,2016,94.0
+1937,Fort Street Public School,2016,95.0
+7408,Bourke Street Public School,2016,94.2
+4250,Randwick Public School,2016,95.8
+1042,Annandale North Public School,2016,96.5
+8133,North Sydney Girls High School,2016,97.7
+8507,Sydney Secondary College Leichhardt Campus,2016,92.8
+2283,Kensington Public School,2016,96.1
+8556,Alexandria Park Community School,2016,91.5
+8506,Tempe High School,2016,94.5
+8138,Sydney Girls High School,2016,96.0
+3935,Crown Street Public School,2016,95.0
+1485,Cammeray Public School,2016,96.6
+1616,Coogee Public School,2016,96.2
+1774,Drummoyne Public School,2016,96.0
+1932,Forest Lodge Public School,2016,94.9
+2766,North Sydney Public School,2016,95.1
+2840,Parramatta Public School,2016,93.5
+8132,North Sydney Boys High School,2016,97.6
+2843,Parramatta West Public School,2016,94.7
+4147,Erskineville Public School,2016,96.5
+7414,Darlinghurst Public School,2016,94.0
+7430,Mosman Public School,2016,95.6
+7423,Leichhardt Public School,2016,95.9
+7436,Stanmore Public School,2016,95.6
+7432,Paddington Public School,2016,95.7
+1240,Birchgrove Public School,2016,96.2
+2744,Newtown North Public School,2016,96.0
+7435,Rozelle Public School,2016,95.6
+2009,Glenmore Road Public School,2016,96.1
+1768,Double Bay Public School,2016,96.3
+1041,Annandale Public School,2016,94.6
+2543,Middle Harbour Public School,2016,95.5
+8137,Sydney Boys High School,2016,96.0
+7419,Glebe Public School,2016,91.8
+5104,Australia Street Infants School,2016,94.2
+2812,Orange Grove Public School,2016,95.4
+1735,Darlington Public School,2016,94.7
+5114,Ferncourt Public School,2016,96.3
+3840,Parramatta East Public School,2016,93.6
+8484,Sydney Secondary College Balmain Campus,2016,92.1
+8504,Fort Street High School,2016,96.6
+2189,Hunters Hill Public School,2016,95.6
+2930,Rainbow Street Public School,2016,96.3
+2749,Nicholson Street Public School,2016,93.3
+8540,Marrickville High School,2016,90.9
+7418,Gardeners Road Public School,2016,92.9
+1483,Camdenville Public School,2016,94.1
+4502,Petersham Public School,2016,95.9
+3948,Tempe Public School,2016,94.4
+8822,Macarthur Girls High School,2016,93.3
+2076,Greenwich Public School,2016,96.2
+4543,Wilkins Public School,2016,95.4
+4551,Plunkett Street Public School,2016,91.5
+3952,Marrickville Public School,2016,93.9
+7431,Newtown Public School,2016,96.2
+2499,Mascot Public School,2016,95.2
+4516,Eastlakes Public School,2016,94.1
+8263,J J Cahill Memorial High School,2016,87.5
+3032,St Peters Public School,2016,95.2
+5112,Taverners Hill Infants School,2016,95.7
+7413,Daceyville Public School,2016,94.3
+8147,Conservatorium High School,2016,97.1
+8910,Cammeraygal High School,2016,94.2
+8135,Parramatta High School,2017,94.3
+8892,Arthur Phillip High School,2017,89.2
+7442,Woollahra Public School,2017,94.7
+3305,Ultimo Public School,2017,94.7
+7404,Balmain Public School,2017,96.1
+2730,Neutral Bay Public School,2017,95.1
+8530,Newtown High School of Performing Arts,2017,94.1
+8326,Mosman High School,2017,93.6
+4656,Anzac Park Public School,2017,95.2
+1937,Fort Street Public School,2017,94.1
+7408,Bourke Street Public School,2017,93.8
+4250,Randwick Public School,2017,95.8
+1042,Annandale North Public School,2017,97.4
+8133,North Sydney Girls High School,2017,96.5
+8507,Sydney Secondary College Leichhardt Campus,2017,91.8
+2283,Kensington Public School,2017,95.6
+8556,Alexandria Park Community School,2017,91.4
+8506,Tempe High School,2017,93.9
+8138,Sydney Girls High School,2017,96.3
+3935,Crown Street Public School,2017,94.7
+1485,Cammeray Public School,2017,96.3
+1616,Coogee Public School,2017,97.3
+1774,Drummoyne Public School,2017,95.2
+1932,Forest Lodge Public School,2017,95.4
+2766,North Sydney Public School,2017,94.5
+2840,Parramatta Public School,2017,93.3
+8132,North Sydney Boys High School,2017,97.5
+2843,Parramatta West Public School,2017,94.7
+4147,Erskineville Public School,2017,95.3
+7414,Darlinghurst Public School,2017,94.3
+7430,Mosman Public School,2017,95.7
+7423,Leichhardt Public School,2017,96.1
+7436,Stanmore Public School,2017,95.1
+7432,Paddington Public School,2017,94.8
+1240,Birchgrove Public School,2017,96.1
+2744,Newtown North Public School,2017,96.1
+7435,Rozelle Public School,2017,96.2
+2009,Glenmore Road Public School,2017,95.8
+1768,Double Bay Public School,2017,96.1
+1041,Annandale Public School,2017,95.0
+2543,Middle Harbour Public School,2017,95.4
+8137,Sydney Boys High School,2017,96.3
+7419,Glebe Public School,2017,92.9
+5104,Australia Street Infants School,2017,94.9
+2812,Orange Grove Public School,2017,95.9
+1735,Darlington Public School,2017,93.6
+5114,Ferncourt Public School,2017,95.6
+3840,Parramatta East Public School,2017,94.7
+8484,Sydney Secondary College Balmain Campus,2017,90.8
+8504,Fort Street High School,2017,97.0
+2189,Hunters Hill Public School,2017,95.2
+2930,Rainbow Street Public School,2017,94.3
+2749,Nicholson Street Public School,2017,95.2
+8540,Marrickville High School,2017,91.2
+7418,Gardeners Road Public School,2017,92.4
+1483,Camdenville Public School,2017,93.8
+4502,Petersham Public School,2017,94.8
+3948,Tempe Public School,2017,94.0
+8822,Macarthur Girls High School,2017,93.0
+2076,Greenwich Public School,2017,96.8
+4543,Wilkins Public School,2017,95.6
+4551,Plunkett Street Public School,2017,83.3
+3952,Marrickville Public School,2017,94.1
+7431,Newtown Public School,2017,95.2
+2499,Mascot Public School,2017,94.9
+4516,Eastlakes Public School,2017,94.5
+8263,J J Cahill Memorial High School,2017,87.0
+3032,St Peters Public School,2017,95.6
+5112,Taverners Hill Infants School,2017,95.6
+7413,Daceyville Public School,2017,94.2
+8147,Conservatorium High School,2017,96.8
+8910,Cammeraygal High School,2017,92.7
+8135,Parramatta High School,2018,93.0
+8892,Arthur Phillip High School,2018,89.1
+7442,Woollahra Public School,2018,95.3
+3305,Ultimo Public School,2018,94.3
+7404,Balmain Public School,2018,95.5
+2730,Neutral Bay Public School,2018,95.6
+8530,Newtown High School of Performing Arts,2018,92.7
+8326,Mosman High School,2018,92.6
+4656,Anzac Park Public School,2018,96.6
+1937,Fort Street Public School,2018,94.2
+7408,Bourke Street Public School,2018,93.5
+4250,Randwick Public School,2018,95.3
+1042,Annandale North Public School,2018,96.1
+8133,North Sydney Girls High School,2018,97.3
+8507,Sydney Secondary College Leichhardt Campus,2018,92.0
+2283,Kensington Public School,2018,95.2
+8556,Alexandria Park Community School,2018,90.2
+8506,Tempe High School,2018,92.6
+8138,Sydney Girls High School,2018,96.7
+3935,Crown Street Public School,2018,93.4
+1485,Cammeray Public School,2018,95.6
+1616,Coogee Public School,2018,95.4
+1774,Drummoyne Public School,2018,95.9
+1932,Forest Lodge Public School,2018,94.8
+2766,North Sydney Public School,2018,95.1
+2840,Parramatta Public School,2018,93.5
+8132,North Sydney Boys High School,2018,97.3
+2843,Parramatta West Public School,2018,93.2
+4147,Erskineville Public School,2018,95.2
+7414,Darlinghurst Public School,2018,94.1
+7430,Mosman Public School,2018,95.6
+7423,Leichhardt Public School,2018,95.3
+7436,Stanmore Public School,2018,95.0
+7432,Paddington Public School,2018,95.4
+1240,Birchgrove Public School,2018,94.8
+2744,Newtown North Public School,2018,95.2
+7435,Rozelle Public School,2018,95.8
+2009,Glenmore Road Public School,2018,95.2
+1768,Double Bay Public School,2018,95.7
+1041,Annandale Public School,2018,94.9
+2543,Middle Harbour Public School,2018,95.8
+8137,Sydney Boys High School,2018,96.1
+7419,Glebe Public School,2018,92.1
+5104,Australia Street Infants School,2018,95.0
+2812,Orange Grove Public School,2018,95.5
+1735,Darlington Public School,2018,92.6
+5114,Ferncourt Public School,2018,95.0
+3840,Parramatta East Public School,2018,94.0
+8484,Sydney Secondary College Balmain Campus,2018,89.6
+8504,Fort Street High School,2018,96.2
+2189,Hunters Hill Public School,2018,94.5
+2930,Rainbow Street Public School,2018,94.3
+2749,Nicholson Street Public School,2018,94.1
+8540,Marrickville High School,2018,92.8
+7418,Gardeners Road Public School,2018,93.2
+1483,Camdenville Public School,2018,94.8
+4502,Petersham Public School,2018,93.9
+3948,Tempe Public School,2018,93.9
+8822,Macarthur Girls High School,2018,92.8
+2076,Greenwich Public School,2018,95.5
+4543,Wilkins Public School,2018,95.2
+4551,Plunkett Street Public School,2018,88.5
+3952,Marrickville Public School,2018,94.9
+7431,Newtown Public School,2018,94.9
+2499,Mascot Public School,2018,93.9
+4516,Eastlakes Public School,2018,93.5
+8263,J J Cahill Memorial High School,2018,85.7
+3032,St Peters Public School,2018,94.7
+5112,Taverners Hill Infants School,2018,95.4
+7413,Daceyville Public School,2018,94.4
+8147,Conservatorium High School,2018,96.0
+8910,Cammeraygal High School,2018,91.6
+8135,Parramatta High School,2019,94.3
+8892,Arthur Phillip High School,2019,89.4
+7442,Woollahra Public School,2019,96.0
+3305,Ultimo Public School,2019,94.1
+7404,Balmain Public School,2019,94.7
+2730,Neutral Bay Public School,2019,94.6
+8530,Newtown High School of Performing Arts,2019,92.3
+8326,Mosman High School,2019,92.1
+4656,Anzac Park Public School,2019,94.9
+1937,Fort Street Public School,2019,92.3
+7408,Bourke Street Public School,2019,94.3
+4250,Randwick Public School,2019,95.1
+1042,Annandale North Public School,2019,95.1
+8133,North Sydney Girls High School,2019,97.3
+8507,Sydney Secondary College Leichhardt Campus,2019,91.4
+2283,Kensington Public School,2019,94.4
+8556,Alexandria Park Community School,2019,89.0
+8506,Tempe High School,2019,91.1
+8138,Sydney Girls High School,2019,96.3
+3935,Crown Street Public School,2019,93.8
+1485,Cammeray Public School,2019,95.8
+1616,Coogee Public School,2019,95.0
+1774,Drummoyne Public School,2019,95.5
+1932,Forest Lodge Public School,2019,94.9
+2766,North Sydney Public School,2019,94.5
+2840,Parramatta Public School,2019,93.0
+8132,North Sydney Boys High School,2019,97.1
+2843,Parramatta West Public School,2019,92.7
+4147,Erskineville Public School,2019,93.9
+7414,Darlinghurst Public School,2019,94.3
+7430,Mosman Public School,2019,95.1
+7423,Leichhardt Public School,2019,95.4
+7436,Stanmore Public School,2019,94.6
+7432,Paddington Public School,2019,95.1
+1240,Birchgrove Public School,2019,94.6
+2744,Newtown North Public School,2019,93.4
+7435,Rozelle Public School,2019,95.3
+2009,Glenmore Road Public School,2019,95.1
+1768,Double Bay Public School,2019,94.7
+1041,Annandale Public School,2019,94.8
+2543,Middle Harbour Public School,2019,94.7
+8137,Sydney Boys High School,2019,95.3
+7419,Glebe Public School,2019,91.6
+5104,Australia Street Infants School,2019,95.5
+2812,Orange Grove Public School,2019,94.6
+1735,Darlington Public School,2019,91.3
+5114,Ferncourt Public School,2019,94.0
+3840,Parramatta East Public School,2019,94.2
+8484,Sydney Secondary College Balmain Campus,2019,89.0
+8504,Fort Street High School,2019,96.2
+2189,Hunters Hill Public School,2019,94.4
+2930,Rainbow Street Public School,2019,94.5
+2749,Nicholson Street Public School,2019,95.1
+8540,Marrickville High School,2019,92.2
+7418,Gardeners Road Public School,2019,91.6
+1483,Camdenville Public School,2019,95.5
+4502,Petersham Public School,2019,94.1
+3948,Tempe Public School,2019,93.6
+8822,Macarthur Girls High School,2019,92.0
+2076,Greenwich Public School,2019,96.1
+4543,Wilkins Public School,2019,94.2
+4551,Plunkett Street Public School,2019,84.2
+3952,Marrickville Public School,2019,93.3
+7431,Newtown Public School,2019,94.7
+2499,Mascot Public School,2019,93.1
+4516,Eastlakes Public School,2019,92.8
+8263,J J Cahill Memorial High School,2019,83.4
+3032,St Peters Public School,2019,92.6
+5112,Taverners Hill Infants School,2019,94.6
+7413,Daceyville Public School,2019,93.6
+8147,Conservatorium High School,2019,93.9
+8910,Cammeraygal High School,2019,91.5
+8913,Inner Sydney High School,2021,93.0
+8135,Parramatta High School,2021,94.2
+8892,Arthur Phillip High School,2021,89.5
+7442,Woollahra Public School,2021,95.7
+3305,Ultimo Public School,2021,94.4
+7404,Balmain Public School,2021,96.3
+5516,Centennial Park School,2021,54.1
+2730,Neutral Bay Public School,2021,95.3
+8530,Newtown High School of Performing Arts,2021,91.7
+8326,Mosman High School,2021,91.2
+4656,Anzac Park Public School,2021,95.1
+1937,Fort Street Public School,2021,94.6
+7408,Bourke Street Public School,2021,94.5
+4250,Randwick Public School,2021,95.2
+1042,Annandale North Public School,2021,95.0
+8133,North Sydney Girls High School,2021,96.4
+8507,Sydney Secondary College Leichhardt Campus,2021,91.2
+2283,Kensington Public School,2021,95.2
+8556,Alexandria Park Community School,2021,89.8
+8506,Tempe High School,2021,92.3
+8138,Sydney Girls High School,2021,95.5
+3935,Crown Street Public School,2021,94.5
+1485,Cammeray Public School,2021,95.5
+1616,Coogee Public School,2021,95.1
+1774,Drummoyne Public School,2021,94.7
+1932,Forest Lodge Public School,2021,94.4
+4660,Bayanami Public School,2021,92.7
+2766,North Sydney Public School,2021,95.1
+2840,Parramatta Public School,2021,94.2
+8132,North Sydney Boys High School,2021,97.1
+2843,Parramatta West Public School,2021,92.8
+4147,Erskineville Public School,2021,94.2
+7414,Darlinghurst Public School,2021,95.0
+7430,Mosman Public School,2021,95.1
+7423,Leichhardt Public School,2021,95.1
+7436,Stanmore Public School,2021,94.3
+7432,Paddington Public School,2021,95.2
+1240,Birchgrove Public School,2021,94.6
+2744,Newtown North Public School,2021,94.6
+7435,Rozelle Public School,2021,95.3
+2009,Glenmore Road Public School,2021,95.3
+1768,Double Bay Public School,2021,94.2
+1041,Annandale Public School,2021,94.9
+2543,Middle Harbour Public School,2021,95.5
+8137,Sydney Boys High School,2021,95.6
+7419,Glebe Public School,2021,91.1
+5104,Australia Street Infants School,2021,93.4
+2812,Orange Grove Public School,2021,94.0
+1735,Darlington Public School,2021,92.5
+5114,Ferncourt Public School,2021,94.3
+3840,Parramatta East Public School,2021,94.6
+8484,Sydney Secondary College Balmain Campus,2021,90.9
+8504,Fort Street High School,2021,95.7
+2189,Hunters Hill Public School,2021,93.8
+2930,Rainbow Street Public School,2021,94.7
+2749,Nicholson Street Public School,2021,94.4
+8540,Marrickville High School,2021,89.6
+7418,Gardeners Road Public School,2021,93.1
+1483,Camdenville Public School,2021,93.7
+4502,Petersham Public School,2021,94.5
+3948,Tempe Public School,2021,94.5
+8822,Macarthur Girls High School,2021,92.7
+2076,Greenwich Public School,2021,96.1
+4543,Wilkins Public School,2021,94.4
+4551,Plunkett Street Public School,2021,86.3
+3952,Marrickville Public School,2021,92.9
+7431,Newtown Public School,2021,95.4
+2499,Mascot Public School,2021,94.3
+4516,Eastlakes Public School,2021,90.7
+8263,J J Cahill Memorial High School,2021,83.6
+3032,St Peters Public School,2021,94.4
+5112,Taverners Hill Infants School,2021,92.3
+7413,Daceyville Public School,2021,92.5
+5540,Bridge Road School,2021,79.7
+5460,Yudi Gunyi School,2021,34.1
+8147,Conservatorium High School,2021,96.2
+8910,Cammeraygal High School,2021,91.4
+8913,Inner Sydney High School,2022,86.1
+8135,Parramatta High School,2022,90.8
+8892,Arthur Phillip High School,2022,85.4
+7442,Woollahra Public School,2022,90.4
+3305,Ultimo Public School,2022,90.4
+7404,Balmain Public School,2022,91.4
+5516,Centennial Park School,2022,54.5
+2730,Neutral Bay Public School,2022,92.8
+8530,Newtown High School of Performing Arts,2022,86.9
+8326,Mosman High School,2022,86.7
+4656,Anzac Park Public School,2022,91.4
+1937,Fort Street Public School,2022,89.1
+7408,Bourke Street Public School,2022,91.2
+4250,Randwick Public School,2022,90.7
+1042,Annandale North Public School,2022,91.2
+8133,North Sydney Girls High School,2022,95.0
+8507,Sydney Secondary College Leichhardt Campus,2022,86.6
+2283,Kensington Public School,2022,91.0
+8556,Alexandria Park Community School,2022,84.8
+8506,Tempe High School,2022,87.6
+8138,Sydney Girls High School,2022,93.4
+3935,Crown Street Public School,2022,88.4
+1485,Cammeray Public School,2022,93.1
+1616,Coogee Public School,2022,92.3
+1774,Drummoyne Public School,2022,90.8
+1932,Forest Lodge Public School,2022,88.7
+4660,Bayanami Public School,2022,88.6
+2766,North Sydney Public School,2022,91.1
+2840,Parramatta Public School,2022,87.4
+8132,North Sydney Boys High School,2022,92.3
+2843,Parramatta West Public School,2022,86.1
+4147,Erskineville Public School,2022,88.2
+7414,Darlinghurst Public School,2022,89.7
+7430,Mosman Public School,2022,91.3
+7423,Leichhardt Public School,2022,89.3
+7436,Stanmore Public School,2022,89.6
+7432,Paddington Public School,2022,90.7
+1240,Birchgrove Public School,2022,89.8
+2744,Newtown North Public School,2022,89.0
+7435,Rozelle Public School,2022,90.0
+2009,Glenmore Road Public School,2022,92.0
+1768,Double Bay Public School,2022,88.5
+1041,Annandale Public School,2022,91.1
+2543,Middle Harbour Public School,2022,90.5
+8137,Sydney Boys High School,2022,91.8
+7419,Glebe Public School,2022,87.4
+5104,Australia Street Infants School,2022,89.2
+2812,Orange Grove Public School,2022,90.4
+1735,Darlington Public School,2022,85.3
+5114,Ferncourt Public School,2022,90.2
+3840,Parramatta East Public School,2022,89.1
+8484,Sydney Secondary College Balmain Campus,2022,84.9
+8504,Fort Street High School,2022,93.8
+2189,Hunters Hill Public School,2022,90.4
+2930,Rainbow Street Public School,2022,91.0
+2749,Nicholson Street Public School,2022,90.0
+8540,Marrickville High School,2022,87.4
+7418,Gardeners Road Public School,2022,86.6
+1483,Camdenville Public School,2022,89.5
+4502,Petersham Public School,2022,91.0
+3948,Tempe Public School,2022,91.0
+8822,Macarthur Girls High School,2022,87.3
+2076,Greenwich Public School,2022,91.4
+4543,Wilkins Public School,2022,89.9
+4551,Plunkett Street Public School,2022,83.1
+3952,Marrickville Public School,2022,90.2
+7431,Newtown Public School,2022,88.8
+2499,Mascot Public School,2022,90.1
+4516,Eastlakes Public School,2022,84.9
+8263,J J Cahill Memorial High School,2022,79.8
+3032,St Peters Public School,2022,89.9
+5112,Taverners Hill Infants School,2022,86.4
+7413,Daceyville Public School,2022,86.4
+5540,Bridge Road School,2022,80.8
+5460,Yudi Gunyi School,2022,29.4
+8147,Conservatorium High School,2022,94.1
+8910,Cammeraygal High School,2022,87.6
+8913,Inner Sydney High School,2023,89.1
+8135,Parramatta High School,2023,92.5
+8892,Arthur Phillip High School,2023,87.7
+7442,Woollahra Public School,2023,94.7
+3305,Ultimo Public School,2023,91.9
+7404,Balmain Public School,2023,92.9
+5516,Centennial Park School,2023,78.8
+2730,Neutral Bay Public School,2023,93.5
+8530,Newtown High School of Performing Arts,2023,90.1
+8326,Mosman High School,2023,89.6
+4656,Anzac Park Public School,2023,92.7
+1937,Fort Street Public School,2023,94.0
+7408,Bourke Street Public School,2023,92.0
+4250,Randwick Public School,2023,93.0
+1042,Annandale North Public School,2023,94.2
+8133,North Sydney Girls High School,2023,95.7
+8507,Sydney Secondary College Leichhardt Campus,2023,89.1
+2283,Kensington Public School,2023,91.8
+8556,Alexandria Park Community School,2023,87.2
+8506,Tempe High School,2023,89.8
+8138,Sydney Girls High School,2023,94.1
+3935,Crown Street Public School,2023,92.7
+1485,Cammeray Public School,2023,93.6
+1616,Coogee Public School,2023,93.2
+1774,Drummoyne Public School,2023,93.1
+1932,Forest Lodge Public School,2023,91.8
+4660,Bayanami Public School,2023,90.9
+2766,North Sydney Public School,2023,93.1
+2840,Parramatta Public School,2023,90.8
+8132,North Sydney Boys High School,2023,95.4
+2843,Parramatta West Public School,2023,90.3
+4147,Erskineville Public School,2023,93.4
+7414,Darlinghurst Public School,2023,93.1
+7430,Mosman Public School,2023,93.3
+7423,Leichhardt Public School,2023,92.5
+7436,Stanmore Public School,2023,92.5
+7432,Paddington Public School,2023,92.9
+1240,Birchgrove Public School,2023,91.3
+2744,Newtown North Public School,2023,93.5
+7435,Rozelle Public School,2023,94.0
+2009,Glenmore Road Public School,2023,93.5
+1768,Double Bay Public School,2023,89.7
+1041,Annandale Public School,2023,92.1
+2543,Middle Harbour Public School,2023,93.1
+8137,Sydney Boys High School,2023,94.0
+7419,Glebe Public School,2023,89.3
+5104,Australia Street Infants School,2023,93.0
+2812,Orange Grove Public School,2023,92.3
+1735,Darlington Public School,2023,89.0
+5114,Ferncourt Public School,2023,92.6
+3840,Parramatta East Public School,2023,91.0
+8484,Sydney Secondary College Balmain Campus,2023,88.3
+8504,Fort Street High School,2023,94.5
+2189,Hunters Hill Public School,2023,92.7
+2930,Rainbow Street Public School,2023,92.6
+2749,Nicholson Street Public School,2023,90.7
+8540,Marrickville High School,2023,89.3
+7418,Gardeners Road Public School,2023,91.3
+1483,Camdenville Public School,2023,91.8
+4502,Petersham Public School,2023,90.6
+3948,Tempe Public School,2023,91.8
+8822,Macarthur Girls High School,2023,88.9
+2076,Greenwich Public School,2023,94.1
+4543,Wilkins Public School,2023,92.4
+4551,Plunkett Street Public School,2023,85.6
+3952,Marrickville Public School,2023,92.1
+7431,Newtown Public School,2023,92.6
+2499,Mascot Public School,2023,91.0
+4516,Eastlakes Public School,2023,91.2
+8263,J J Cahill Memorial High School,2023,85.3
+3032,St Peters Public School,2023,91.5
+5112,Taverners Hill Infants School,2023,93.0
+7413,Daceyville Public School,2023,91.4
+5540,Bridge Road School,2023,77.9
+5460,Yudi Gunyi School,2023,37.2
+8147,Conservatorium High School,2023,95.3
+8910,Cammeraygal High School,2023,90.7
+8913,Inner Sydney High School,2024,89.0
+8135,Parramatta High School,2024,92.6
+8892,Arthur Phillip High School,2024,87.1
+7442,Woollahra Public School,2024,93.6
+3305,Ultimo Public School,2024,92.4
+7404,Balmain Public School,2024,92.3
+5516,Centennial Park School,2024,76.8
+2730,Neutral Bay Public School,2024,92.9
+8530,Newtown High School of Performing Arts,2024,88.7
+8326,Mosman High School,2024,90.4
+4656,Anzac Park Public School,2024,92.8
+1937,Fort Street Public School,2024,93.3
+7408,Bourke Street Public School,2024,91.8
+4250,Randwick Public School,2024,92.4
+1042,Annandale North Public School,2024,92.7
+8133,North Sydney Girls High School,2024,95.2
+8507,Sydney Secondary College Leichhardt Campus,2024,87.3
+2283,Kensington Public School,2024,92.6
+8556,Alexandria Park Community School,2024,87.1
+8506,Tempe High School,2024,89.9
+8138,Sydney Girls High School,2024,94.1
+3935,Crown Street Public School,2024,93.1
+1485,Cammeray Public School,2024,93.2
+1616,Coogee Public School,2024,92.9
+1774,Drummoyne Public School,2024,92.5
+1932,Forest Lodge Public School,2024,91.4
+4660,Bayanami Public School,2024,91.1
+2766,North Sydney Public School,2024,92.9
+2840,Parramatta Public School,2024,90.8
+8132,North Sydney Boys High School,2024,93.9
+2843,Parramatta West Public School,2024,89.1
+4147,Erskineville Public School,2024,90.9
+7414,Darlinghurst Public School,2024,92.9
+7430,Mosman Public School,2024,92.3
+7423,Leichhardt Public School,2024,92.5
+7436,Stanmore Public School,2024,92.8
+7432,Paddington Public School,2024,92.9
+1240,Birchgrove Public School,2024,92.0
+2744,Newtown North Public School,2024,91.3
+7435,Rozelle Public School,2024,93.1
+2009,Glenmore Road Public School,2024,92.8
+1768,Double Bay Public School,2024,93.6
+1041,Annandale Public School,2024,92.9
+2543,Middle Harbour Public School,2024,92.6
+8137,Sydney Boys High School,2024,94.5
+7419,Glebe Public School,2024,85.6
+5104,Australia Street Infants School,2024,93.7
+2812,Orange Grove Public School,2024,91.8
+1735,Darlington Public School,2024,88.9
+5114,Ferncourt Public School,2024,92.0
+3840,Parramatta East Public School,2024,91.6
+8484,Sydney Secondary College Balmain Campus,2024,86.7
+8504,Fort Street High School,2024,94.3
+2189,Hunters Hill Public School,2024,92.7
+2930,Rainbow Street Public School,2024,92.3
+2749,Nicholson Street Public School,2024,91.5
+8540,Marrickville High School,2024,87.8
+7418,Gardeners Road Public School,2024,89.7
+1483,Camdenville Public School,2024,90.4
+4502,Petersham Public School,2024,92.3
+3948,Tempe Public School,2024,91.4
+8822,Macarthur Girls High School,2024,88.4
+2076,Greenwich Public School,2024,93.1
+4543,Wilkins Public School,2024,90.4
+4551,Plunkett Street Public School,2024,85.1
+3952,Marrickville Public School,2024,92.3
+7431,Newtown Public School,2024,91.3
+2499,Mascot Public School,2024,90.8
+4516,Eastlakes Public School,2024,89.7
+8263,J J Cahill Memorial High School,2024,83.7
+3032,St Peters Public School,2024,91.2
+5112,Taverners Hill Infants School,2024,93.8
+7413,Daceyville Public School,2024,90.5
+5540,Bridge Road School,2024,76.2
+5460,Yudi Gunyi School,2024,33.5
+8147,Conservatorium High School,2024,95.6
+8910,Cammeraygal High School,2024,90.3

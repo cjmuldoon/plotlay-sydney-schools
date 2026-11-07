@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "a81dae33a2ee4bf05019",
+  "position": {
+    "x": 1180,
+    "y": 300,
+    "z": 1,
+    "height": 700,
+    "width": 700,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "shape_source"
+                }
+              },
+              "queryRef": "Schools.shape_source",
+              "nativeQueryRef": "shape_source"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "lots"
+                }
+              },
+              "queryRef": "Schools.lots",
+              "nativeQueryRef": "lots"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "outline_check"
+                }
+              },
+              "queryRef": "Schools.outline_check",
+              "nativeQueryRef": "outline_check"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "grounds_m2"
+                }
+              },
+              "queryRef": "Schools.grounds_m2",
+              "nativeQueryRef": "grounds_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "note"
+                }
+              },
+              "queryRef": "Schools.note",
+              "nativeQueryRef": "note"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'How the area was made'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
