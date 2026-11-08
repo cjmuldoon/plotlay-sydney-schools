@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "SydneySchoolGrounds"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "81bd4fca-fe03-4b59-afa7-482d9626c7b2"
+  }
+}

@@ -160,23 +160,30 @@ table Schools
 		summarizeBy: none
 		sourceColumn: opened
 
+		variation Variation
+			isDefault
+			relationship: 6caae240-ee72-4ef1-ae24-b948633f4536
+			defaultHierarchy: LocalDateTable_3fab937d-ad80-4928-85a8-9c95efaab972.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column latitude
 		dataType: double
 		lineageTag: ff42c3ce-afa2-2c5f-9e27-9f45bf25658f
-		summarizeBy: none
-		sourceColumn: latitude
 		dataCategory: Latitude
+		summarizeBy: sum
+		sourceColumn: latitude
 
 		annotation SummarizationSetBy = Automatic
 
 	column longitude
 		dataType: double
 		lineageTag: bdfbb68c-d75c-0ca7-fb15-58cbd9b2296c
-		summarizeBy: none
-		sourceColumn: longitude
 		dataCategory: Longitude
+		summarizeBy: sum
+		sourceColumn: longitude
 
 		annotation SummarizationSetBy = Automatic
 
@@ -184,7 +191,7 @@ table Schools
 		dataType: double
 		formatString: #,0
 		lineageTag: 1329d72b-3ef0-48c9-e004-e63c34a65b33
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: grounds_m2
 
 		annotation SummarizationSetBy = Automatic
@@ -267,3 +274,4 @@ table Schools
 				    Keyed
 
 	annotation PBI_ResultType = Table
+

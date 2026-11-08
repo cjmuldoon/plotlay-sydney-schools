@@ -8,9 +8,16 @@ model Model
 
 annotation PBI_QueryOrder = ["DataFolder","GetFile","Schools","Enrolments","Attendance","Years"]
 
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
 ref table Schools
 ref table Enrolments
 ref table Attendance
 ref table Years
+ref table DateTableTemplate_64d7ee77-0071-4310-9013-9bd964ec850f
+ref table LocalDateTable_3fab937d-ad80-4928-85a8-9c95efaab972
 
 ref cultureInfo en-AU
+

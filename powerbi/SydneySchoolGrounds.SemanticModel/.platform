@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SydneySchoolGrounds"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "29e1c38b-271a-468b-9cb0-065e358a5038"
+  }
+}

@@ -1,0 +1,2 @@
+# Power BI Desktop saves with Windows line endings; store them as LF so its saves diff as real changes only
+* text=auto

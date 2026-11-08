@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "f90442472e44b6af696f",
   "position": {
-    "x": 40,
-    "y": 24,
+    "x": 39.288256227758005,
+    "y": 23.914590747330958,
     "z": 1,
-    "height": 80,
-    "width": 1200,
+    "height": 80.2846975088968,
+    "width": 1501.494661921708,
     "tabOrder": 1
   },
   "visual": {
@@ -34,7 +34,6 @@
         }
       }
     },
-    "drillFilterOtherVisuals": true,
     "objects": {
       "categoryLabels": [
         {
@@ -49,6 +48,25 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0ebf468cb05dee0a8744",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Schools"
+              }
+            },
+            "Property": "School title"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
