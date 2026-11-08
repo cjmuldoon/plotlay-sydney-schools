@@ -5,8 +5,8 @@
     "x": 39.288256227758005,
     "y": 18.790035587188612,
     "z": 0,
-    "height": 91,
-    "width": 1839.715302491103,
+    "height": 78.57651245551601,
+    "width": 1839.7153024911031,
     "tabOrder": 0
   },
   "visual": {
@@ -22,9 +22,9 @@
                     "value": "NEW SCHOOLS OPEN A YEAR GROUP AT A TIME",
                     "textStyle": {
                       "fontWeight": "bold",
+                      "fontFamily": "Segoe UI Semibold",
                       "fontSize": "24pt",
-                      "color": "#163c6e",
-                      "fontFamily": "Segoe UI Semibold"
+                      "color": "#163c6e"
                     }
                   }
                 ]
@@ -34,9 +34,9 @@
                   {
                     "value": "Headcount 2004 to 2025. New schools climb as planned year groups are added (Inner Sydney High: Year 7 in 2020, Years 7 to 12 in 2025), not from a surge in demand.",
                     "textStyle": {
+                      "fontFamily": "Segoe UI",
                       "fontSize": "11pt",
-                      "color": "#5b6573",
-                      "fontFamily": "Segoe UI"
+                      "color": "#5b6573"
                     }
                   }
                 ]
