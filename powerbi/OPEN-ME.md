@@ -17,6 +17,8 @@
    - If Desktop warns about privacy levels, choose **Ignore privacy levels** for this file (all the sources are public open data) or set both sources to Public.
 4. Check the numbers (below).
 
+If the report was updated while open, close Power BI and reopen the .pbip rather than using Apply external changes. (After Apply external changes one export drew the page at about 57% inside a much larger canvas; a full close and reopen put it right.)
+
 ## Check the numbers after Refresh
 
 After **Refresh**, with the Year slicer on **2025** (as the report opens; it allows one year at a time):
@@ -57,7 +59,7 @@ A `.pbix` is a single file anyone can open, but it can only be written by Power 
 
 ## Shot list for the website and the video
 
-Capture at 1920 × 1080 (Windows display scaling 100%), with the Plotlay theme on. In Parallels, use the Windows Snipping Tool (Win+Shift+S) for stills and Win+Alt+R (Xbox Game Bar) or Clipchamp for a clip. Save them to `powerbi/screenshots/` and the website team swaps them into the page.
+Capture at 1920 × 1080 (Windows display scaling 100%), with the Plotlay theme on. In Parallels, use the Windows Snipping Tool (Win+Shift+S) for stills and Win+Alt+R (Xbox Game Bar) or Clipchamp for a clip. Save them to `powerbi/Screenshots/` and the website team swaps them into the page.
 
 | # | Shot | How | Length |
 |---|---|---|---|
