@@ -5,7 +5,7 @@
     "x": 39.288256227758005,
     "y": 18.790035587188612,
     "z": 0,
-    "height": 76.868327402135222,
+    "height": 76.86832740213522,
     "width": 1520.2846975088967,
     "tabOrder": 0
   },
@@ -23,7 +23,8 @@
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "24pt",
-                      "color": "#163c6e"
+                      "color": "#163c6e",
+                      "fontFamily": "Segoe UI Semibold"
                     }
                   }
                 ]
@@ -34,7 +35,8 @@
                     "value": "Azure Maps: add the reference layer data/geometry/schools.geojson (Format visual, Reference layer) for the filled shapes; it joins on the school code.",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]

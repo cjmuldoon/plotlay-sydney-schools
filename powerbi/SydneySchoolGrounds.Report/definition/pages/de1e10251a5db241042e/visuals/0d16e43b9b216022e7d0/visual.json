@@ -5,7 +5,7 @@
     "x": 39.288256227758005,
     "y": 1023.202846975089,
     "z": 99,
-    "height": 47.829181494661917,
+    "height": 47.82918149466192,
     "width": 1841.4234875444838,
     "tabOrder": 99
   },
@@ -22,7 +22,8 @@
                     "value": "School data: NSW Department of Education, data.nsw.gov.au (CC BY). Cadastre and imagery: © State of New South Wales (Spatial Services), CC BY 3.0 AU. School outlines made in Plotlay (getplotlay.com) from NSW Cadastre lots and drawn over NSW Imagery. Suburbs on the map: ABS ASGS 2021 (CC BY 4.0). Grounds are land including buildings, not floor or playground area. Areas approximate.",
                     "textStyle": {
                       "fontSize": "9pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]

@@ -5,8 +5,8 @@
     "x": 39.288256227758005,
     "y": 18.790035587188612,
     "z": 0,
-    "height": 75.160142348754448,
-    "width": 1839.7153024911031,
+    "height": 75.16014234875445,
+    "width": 1839.715302491103,
     "tabOrder": 0
   },
   "visual": {
@@ -23,7 +23,8 @@
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "24pt",
-                      "color": "#163c6e"
+                      "color": "#163c6e",
+                      "fontFamily": "Segoe UI Semibold"
                     }
                   }
                 ]
@@ -34,7 +35,8 @@
                     "value": "Semester 1 attendance. No 2020 data; the department says 2021 is not comparable.",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]

@@ -22,7 +22,8 @@
                     "value": "Attendance has many causes. This data shows no clear link between grounds per student and attendance.",
                     "textStyle": {
                       "fontSize": "12pt",
-                      "color": "#1f2a37"
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]
