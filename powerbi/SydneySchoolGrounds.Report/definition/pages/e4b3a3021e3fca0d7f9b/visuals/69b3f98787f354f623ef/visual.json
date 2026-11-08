@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.short_name",
-              "nativeQueryRef": "short_name"
+              "nativeQueryRef": "short_name",
+              "displayName": "School"
             }
           ]
         },
@@ -35,17 +36,18 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "Schools"
                     }
                   },
-                  "Property": "grounds_m2"
+                  "Property": "Grounds m2"
                 }
               },
-              "queryRef": "Schools.grounds_m2",
-              "nativeQueryRef": "grounds_m2"
+              "queryRef": "Schools.Grounds m2",
+              "nativeQueryRef": "Grounds m2",
+              "displayName": "Grounds (m²)"
             }
           ]
         },
@@ -63,7 +65,8 @@
                 }
               },
               "queryRef": "Schools.Students",
-              "nativeQueryRef": "Students"
+              "nativeQueryRef": "Students",
+              "displayName": "Students"
             }
           ]
         }
@@ -85,6 +88,41 @@
               "expr": {
                 "Literal": {
                   "Value": "'Grounds (m²) against students'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.m2 per student",
-              "nativeQueryRef": "m2 per student"
+              "nativeQueryRef": "m2 per student",
+              "displayName": "m² per student"
             }
           ]
         }
@@ -48,7 +49,29 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'m² of grounds per student'"
+                  "Value": "'m² of grounds per student, 2025'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

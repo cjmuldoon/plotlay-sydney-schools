@@ -23,11 +23,12 @@
                       "Entity": "Schools"
                     }
                   },
-                  "Property": "school_name"
+                  "Property": "map_key"
                 }
               },
-              "queryRef": "Schools.school_name",
-              "nativeQueryRef": "school_name"
+              "queryRef": "Schools.map_key",
+              "nativeQueryRef": "map_key",
+              "displayName": "School code"
             }
           ]
         },
@@ -35,17 +36,23 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Schools"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Schools"
+                        }
+                      },
+                      "Property": "latitude"
                     }
                   },
-                  "Property": "latitude"
+                  "Function": 1
                 }
               },
-              "queryRef": "Schools.latitude",
-              "nativeQueryRef": "latitude"
+              "queryRef": "Avg(Schools.latitude)",
+              "nativeQueryRef": "latitude",
+              "displayName": "Latitude"
             }
           ]
         },
@@ -53,17 +60,23 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Schools"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Schools"
+                        }
+                      },
+                      "Property": "longitude"
                     }
                   },
-                  "Property": "longitude"
+                  "Function": 1
                 }
               },
-              "queryRef": "Schools.longitude",
-              "nativeQueryRef": "longitude"
+              "queryRef": "Avg(Schools.longitude)",
+              "nativeQueryRef": "longitude",
+              "displayName": "Longitude"
             }
           ]
         },
@@ -81,7 +94,47 @@
                 }
               },
               "queryRef": "Schools.Students",
-              "nativeQueryRef": "Students"
+              "nativeQueryRef": "Students",
+              "displayName": "Students"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Schools"
+                        }
+                      },
+                      "Property": "school_name"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Schools.school_name)",
+              "nativeQueryRef": "school_name",
+              "displayName": "School"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "m2 per student"
+                }
+              },
+              "queryRef": "Schools.m2 per student",
+              "nativeQueryRef": "m2 per student",
+              "displayName": "m² per student"
             }
           ]
         }
@@ -103,6 +156,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Schools (bubble size: students)'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

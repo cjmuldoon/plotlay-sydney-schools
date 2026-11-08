@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.short_name",
-              "nativeQueryRef": "short_name"
+              "nativeQueryRef": "short_name",
+              "displayName": "School"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "Schools.Students 2015",
-              "nativeQueryRef": "Students 2015"
+              "nativeQueryRef": "Students 2015",
+              "displayName": "Students 2015"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "Schools.Students 2025",
-              "nativeQueryRef": "Students 2025"
+              "nativeQueryRef": "Students 2025",
+              "displayName": "Students 2025"
             },
             {
               "field": {
@@ -69,7 +72,8 @@
                 }
               },
               "queryRef": "Schools.Growth since 2015 %",
-              "nativeQueryRef": "Growth since 2015 %"
+              "nativeQueryRef": "Growth since 2015 %",
+              "displayName": "Growth since 2015"
             },
             {
               "field": {
@@ -83,10 +87,29 @@
                 }
               },
               "queryRef": "Schools.m2 per student",
-              "nativeQueryRef": "m2 per student"
+              "nativeQueryRef": "m2 per student",
+              "displayName": "m² per student, 2025"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Schools"
+                  }
+                },
+                "Property": "short_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -105,6 +128,113 @@
               "expr": {
                 "Literal": {
                   "Value": "'Schools'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "270.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.short_name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Students 2015"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Students 2025"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "77.6D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Growth since 2015 %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "83.2D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.m2 per student"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

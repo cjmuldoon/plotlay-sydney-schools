@@ -27,12 +27,28 @@
                 }
               },
               "queryRef": "Schools.School title",
-              "nativeQueryRef": "School title"
+              "nativeQueryRef": "School title",
+              "displayName": "School"
             }
           ]
         }
       }
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

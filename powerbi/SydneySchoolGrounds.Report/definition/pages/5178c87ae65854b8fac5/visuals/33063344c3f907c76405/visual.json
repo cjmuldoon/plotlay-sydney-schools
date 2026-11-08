@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Students 2025",
-              "nativeQueryRef": "Students 2025"
+              "nativeQueryRef": "Students 2025",
+              "displayName": "Students 2025"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Students, 2025'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

@@ -1,28 +1,36 @@
 table Schools
 	lineageTag: b5fe5259-31dd-3b62-06e0-c1bbabecf0d5
 
-	/// Headcount for the schools and years in the filter
-	measure Students = SUM ( Enrolments[students] )
+	/// The year the measures use: the year picked, or the latest year (2025) when none is
+	measure 'Year shown' = MAX ( Years[year] )
+		formatString: 0
+		lineageTag: 25f344ff-1177-c725-67a6-0e37d762d55a
+
+	/// Headcount in the year shown, for the schools in the filter
+	measure Students =
+			VAR y = [Year shown]
+			RETURN CALCULATE ( SUM ( Enrolments[students] ), Years[year] = y )
 		formatString: #,0
 		lineageTag: 78cfe164-1bdd-6073-3376-17a649cd06ba
 
 	/// Grounds of the schools with students in the year shown, so a school not yet open adds no land
-	measure 'Grounds m2' = SUMX ( FILTER ( Schools, CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ), Schools[grounds_m2] )
+	measure 'Grounds m2' = SUMX ( FILTER ( Schools, [Students] > 0 ), Schools[grounds_m2] )
 		formatString: #,0
 		lineageTag: 209d34aa-ccbc-183a-2ff3-d625e131bf69
 
-	/// Grounds (land, including buildings) divided by students
+	/// Grounds (land, including buildings) divided by students, in the year shown
 	measure 'm2 per student' = DIVIDE ( [Grounds m2], [Students] )
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 85a6bc5e-1d48-97a2-991c-8b5b3fd29ac9
+
+	/// m2 per student for compared schools only (blank for vertical schools, schools for specific purposes and unverified outlines)
+	measure 'Compared m2 per student' = CALCULATE ( [m2 per student], KEEPFILTERS ( Schools[compare] = TRUE () ) )
+		formatString: #,0.0
+		lineageTag: 64625a71-8f80-7153-8032-18af14ecae2e
 
 	measure 'Students per ha' = DIVIDE ( [Students], [Grounds m2] / 10000 )
 		formatString: #,0
 		lineageTag: c2bcc13c-9284-025c-7cec-81cbcbe2243e
-
-	measure 'Selected year' = SELECTEDVALUE ( Years[year], 2025 )
-		formatString: 0
-		lineageTag: 06e98748-48aa-c17d-2348-1f7055ed23c2
 
 	measure 'Students 2015' = CALCULATE ( [Students], Years[year] = 2015 )
 		formatString: #,0
@@ -48,13 +56,13 @@ table Schools
 		displayFolder: Years
 		lineageTag: db07f889-623b-a7e0-8615-cb299c66c79f
 
-	/// Median of the schools in the filter (filter compare = TRUE for the story medians)
+	/// Median over the compared schools in the filter of each school's own m2 per student, in the year shown (as the README)
 	measure 'Median m2 per student' =
 			MEDIANX (
-			    FILTER ( VALUES ( Schools[school_key] ), CALCULATE ( [Students] ) > 0 && CALCULATE ( [Grounds m2] ) > 0 ),
-			    CALCULATE ( [m2 per student] )
+			    FILTER ( CALCULATETABLE ( VALUES ( Schools[school_key] ), KEEPFILTERS ( Schools[compare] = TRUE () ) ), NOT ISBLANK ( [m2 per student] ) ),
+			    [m2 per student]
 			)
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 9bd27921-6ba7-1af4-fd4e-6caa9c11d6ce
 
 	measure 'm2 band' =
@@ -73,8 +81,10 @@ table Schools
 		formatString: 0.00
 		lineageTag: a71e114b-c114-32b5-2fd6-52bb52abb48b
 
-	/// Semester 1. No 2020 data; 2021 is not comparable (the department)
-	measure 'Attendance %' = AVERAGE ( Attendance[attendance_pct] )
+	/// Mean over schools for one year: the year shown, or the latest year with attendance data. Semester 1. No 2020 data; 2021 is not comparable (the department)
+	measure 'Attendance %' =
+			VAR y = MAX ( Attendance[year] )
+			RETURN CALCULATE ( AVERAGE ( Attendance[attendance_pct] ), Years[year] = y )
 		formatString: 0.0
 		displayFolder: Attendance
 		lineageTag: cbea1638-bc88-2f46-6f64-cd0af89e16d3
@@ -236,6 +246,14 @@ table Schools
 
 		annotation SummarizationSetBy = Automatic
 
+	column map_key
+		dataType: string
+		lineageTag: 6daee207-4135-99dd-63ce-7f6e83c2c36e
+		summarizeBy: none
+		sourceColumn: map_key
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Schools = m
 		mode: import
 		source =
@@ -243,8 +261,9 @@ table Schools
 				    Source = Csv.Document(GetFile("schools/schools.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
 				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
 				    Kept = Table.SelectColumns(Promoted, {"school_key", "school_name", "short_name", "suburb", "level", "opened", "latitude", "longitude", "grounds_m2", "shape_source", "lots", "outline_check", "vertical", "compare", "note", "wkt"}),
-				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"vertical", type logical}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU")
+				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"vertical", type logical}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU"),
+				    Keyed = Table.AddColumn(Typed, "map_key", each Text.From([school_key]), type text)
 				in
-				    Typed
+				    Keyed
 
 	annotation PBI_ResultType = Table

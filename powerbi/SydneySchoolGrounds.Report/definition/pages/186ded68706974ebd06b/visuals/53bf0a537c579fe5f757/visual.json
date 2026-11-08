@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Schools below 2019 attendance",
-              "nativeQueryRef": "Schools below 2019 attendance"
+              "nativeQueryRef": "Schools below 2019 attendance",
+              "displayName": "Schools below 2019 attendance"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Schools below their 2019 attendance in 2024'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

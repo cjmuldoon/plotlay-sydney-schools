@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Car spaces per student",
-              "nativeQueryRef": "Car spaces per student"
+              "nativeQueryRef": "Car spaces per student",
+              "displayName": "Car spaces per student"
             }
           ]
         }
@@ -48,7 +49,29 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Car spaces of ground per student'"
+                  "Value": "'Car spaces of ground per student, 2025'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

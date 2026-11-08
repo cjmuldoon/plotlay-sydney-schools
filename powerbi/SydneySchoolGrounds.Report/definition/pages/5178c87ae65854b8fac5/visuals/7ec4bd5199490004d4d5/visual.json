@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Attendance 2024",
-              "nativeQueryRef": "Attendance 2024"
+              "nativeQueryRef": "Attendance 2024",
+              "displayName": "Attendance 2024"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Attendance, 2024'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

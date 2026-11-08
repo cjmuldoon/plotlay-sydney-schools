@@ -23,15 +23,16 @@
                       "Entity": "Schools"
                     }
                   },
-                  "Property": "school_key"
+                  "Property": "map_key"
                 }
               },
-              "queryRef": "Schools.school_key",
-              "nativeQueryRef": "school_key"
+              "queryRef": "Schools.map_key",
+              "nativeQueryRef": "map_key",
+              "displayName": "School code"
             }
           ]
         },
-        "Y": {
+        "Value": {
           "projections": [
             {
               "field": {
@@ -45,7 +46,47 @@
                 }
               },
               "queryRef": "Schools.m2 per student",
-              "nativeQueryRef": "m2 per student"
+              "nativeQueryRef": "m2 per student",
+              "displayName": "m² per student"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Schools"
+                        }
+                      },
+                      "Property": "school_name"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Schools.school_name)",
+              "nativeQueryRef": "school_name",
+              "displayName": "School"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Students"
+                }
+              },
+              "queryRef": "Schools.Students",
+              "nativeQueryRef": "Students",
+              "displayName": "Students"
             }
           ]
         }
@@ -66,7 +107,70 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'m² of grounds per student (choose the custom map: data/geometry/schools.topojson)'"
+                  "Value": "'m² of grounds per student (darker: less ground)'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "shape": [
+        {
+          "properties": {
+            "datasourceType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'file_upload'"
+                }
+              }
+            },
+            "mapUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "map": {
+              "geoJson": {
+                "type": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'packaged'"
+                    }
+                  }
+                },
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'schools.topojson'"
+                    }
+                  }
+                },
+                "content": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "schools.topojson"
+                    }
+                  }
+                }
+              }
+            },
+            "projectionEnum": {
+              "expr": {
+                "Literal": {
+                  "Value": "'mercator'"
                 }
               }
             }
