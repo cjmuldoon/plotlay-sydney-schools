@@ -109,7 +109,7 @@ table Schools
 		lineageTag: bc682b04-e58c-fe77-fd3b-1557880bc4b5
 
 	/// Drill-through page title
-	measure 'School title' = SELECTEDVALUE ( Schools[school_name], "Pick a school" ) & ", " & SELECTEDVALUE ( Schools[suburb] )
+	measure 'School title' = IF ( HASONEVALUE ( Schools[school_name] ), VALUES ( Schools[school_name] ) & ", " & SELECTEDVALUE ( Schools[suburb] ) & "  (pick another: right-click a school on the overview, Drill through)", "Pick a school on the overview page (right-click, Drill through)" )
 		lineageTag: 1a00df34-858b-7211-d0c9-c51fe6d6d2ce
 
 	column school_key

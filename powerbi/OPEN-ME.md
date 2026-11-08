@@ -47,6 +47,10 @@ If either map visual comes up empty (Power BI sometimes drops the fields of a ma
 
 Then **File, Save**. Desktop writes your choices back into the project folder.
 
+## Exporting a PDF
+
+The PDF export draws each page as it is saved. To export the school page for a different school, set it in the page's filter (Filters pane, this page) and save before exporting; a pick made by clicking isn't kept in the export. The school page opens on Parramatta High School. Slicer picks you save are kept.
+
 ## Save a .pbix too
 
 A `.pbix` is a single file anyone can open, but it can only be written by Power BI Desktop. After the refresh (and the Azure Maps reference layer, if you want it): **File, Save as**, set the file type to **Power BI file (\*.pbix)**, and save it as `powerbi\SydneySchoolGrounds.pbix` next to the project. It includes the data, so it opens without a refresh. Commit it if you want people to download one file (it is a few MB).
