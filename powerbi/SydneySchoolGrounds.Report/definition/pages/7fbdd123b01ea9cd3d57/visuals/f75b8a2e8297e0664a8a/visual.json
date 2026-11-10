@@ -1,11 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "f75b8a2e8297e0664a8a",
   "position": {
     "x": 1240,
-    "y": 110,
+    "y": 133,
     "z": 1,
-    "height": 900,
+    "height": 877,
     "width": 640,
     "tabOrder": 1
   },
@@ -111,6 +111,43 @@
         ]
       }
     },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Schools'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "objects": {
       "columnWidth": [
         {
@@ -210,117 +247,6 @@
           }
         }
       ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Schools'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI Semibold'"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "97444220baebad277004",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "short_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "290abcb973a103b3e457",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "Students 2015"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d7a0df55de849964e08b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "Students 2025"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3c962b4da17702394719",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "Growth since 2015 %"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e066e2769c0eb160220c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "m2 per student"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
+    }
   }
 }

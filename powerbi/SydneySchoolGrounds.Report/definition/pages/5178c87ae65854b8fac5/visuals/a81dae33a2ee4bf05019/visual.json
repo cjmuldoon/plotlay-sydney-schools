@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "a81dae33a2ee4bf05019",
   "position": {
     "x": 1180,
@@ -111,6 +111,43 @@
         ]
       }
     },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'How the area was made'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "objects": {
       "columnWidth": [
         {
@@ -210,117 +247,6 @@
           }
         }
       ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'How the area was made'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI Semibold'"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "66b7e251a7c2d4036c63",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "shape_source"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "587a69bd150cd09aa6c6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "lots"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8a41f12c0c0b8c582647",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "outline_check"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "77d4023aea0eae51e850",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "grounds_m2"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "270c3996d368104e6b0b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "note"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
+    }
   }
 }

@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "803c957cb4a72de3b30a",
   "position": {
-    "x": 39.288256227758005,
-    "y": 18.790035587188612,
+    "x": 40,
+    "y": 6,
     "z": 0,
-    "height": 76.868327402135222,
-    "width": 1520.2846975088967,
+    "height": 98,
+    "width": 1492,
     "tabOrder": 0
   },
   "visual": {
@@ -21,10 +21,10 @@
                   {
                     "value": "WHERE THE TIGHT SCHOOLS ARE",
                     "textStyle": {
-                      "fontWeight": "bold",
-                      "fontFamily": "Segoe UI Semibold",
                       "fontSize": "24pt",
-                      "color": "#163c6e"
+                      "color": "#163c6e",
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontWeight": "bold"
                     }
                   }
                 ]
@@ -34,9 +34,9 @@
                   {
                     "value": "Azure Maps: add the reference layer data/geometry/schools.geojson (Format visual, Reference layer) for the filled shapes; it joins on the school code.",
                     "textStyle": {
-                      "fontFamily": "Segoe UI",
                       "fontSize": "11pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]

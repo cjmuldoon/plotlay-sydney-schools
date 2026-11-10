@@ -3,8 +3,8 @@ table Attendance
 
 	column school_key
 		dataType: int64
-		isHidden
 		formatString: 0
+		isHidden
 		lineageTag: e97bb1c2-de1e-4f07-2ec2-bb8f5abf57e9
 		summarizeBy: none
 		sourceColumn: school_key
@@ -13,8 +13,8 @@ table Attendance
 
 	column year
 		dataType: int64
-		isHidden
 		formatString: 0
+		isHidden
 		lineageTag: ea905ffc-2a93-a341-2caa-2a23b2ff7abd
 		summarizeBy: none
 		sourceColumn: year
@@ -42,4 +42,3 @@ table Attendance
 				    Typed
 
 	annotation PBI_ResultType = Table
-

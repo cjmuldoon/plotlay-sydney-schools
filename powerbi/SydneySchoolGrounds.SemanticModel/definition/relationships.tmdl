@@ -13,9 +13,3 @@ relationship e1dd0629-861e-90b3-d733-65edf0e98b19
 relationship c9cf0770-d3d7-8e72-0049-bae9de126096
 	fromColumn: Attendance.year
 	toColumn: Years.year
-
-relationship 6caae240-ee72-4ef1-ae24-b948633f4536
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Schools.opened
-	toColumn: LocalDateTable_3fab937d-ad80-4928-85a8-9c95efaab972.Date
-

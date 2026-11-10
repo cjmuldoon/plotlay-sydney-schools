@@ -108,7 +108,7 @@ table Schools
 		displayFolder: Attendance
 		lineageTag: bc682b04-e58c-fe77-fd3b-1557880bc4b5
 
-	/// Drill-through page title
+	/// Drill-through page title: the school, or how to get here when none is picked
 	measure 'School title' = IF ( HASONEVALUE ( Schools[school_name] ), VALUES ( Schools[school_name] ) & ", " & SELECTEDVALUE ( Schools[suburb] ) & "  (pick another: right-click a school on the overview, Drill through)", "Pick a school on the overview page (right-click, Drill through)" )
 		lineageTag: 1a00df34-858b-7211-d0c9-c51fe6d6d2ce
 
@@ -160,30 +160,23 @@ table Schools
 		summarizeBy: none
 		sourceColumn: opened
 
-		variation Variation
-			isDefault
-			relationship: 6caae240-ee72-4ef1-ae24-b948633f4536
-			defaultHierarchy: LocalDateTable_3fab937d-ad80-4928-85a8-9c95efaab972.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column latitude
 		dataType: double
 		lineageTag: ff42c3ce-afa2-2c5f-9e27-9f45bf25658f
-		dataCategory: Latitude
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: latitude
+		dataCategory: Latitude
 
 		annotation SummarizationSetBy = Automatic
 
 	column longitude
 		dataType: double
 		lineageTag: bdfbb68c-d75c-0ca7-fb15-58cbd9b2296c
-		dataCategory: Longitude
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: longitude
+		dataCategory: Longitude
 
 		annotation SummarizationSetBy = Automatic
 
@@ -191,7 +184,7 @@ table Schools
 		dataType: double
 		formatString: #,0
 		lineageTag: 1329d72b-3ef0-48c9-e004-e63c34a65b33
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: grounds_m2
 
 		annotation SummarizationSetBy = Automatic
@@ -261,6 +254,14 @@ table Schools
 
 		annotation SummarizationSetBy = Automatic
 
+	column short_name_axis
+		dataType: string
+		lineageTag: c671a62d-b47a-cb8c-872d-ed21eff237f2
+		summarizeBy: none
+		sourceColumn: short_name_axis
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Schools = m
 		mode: import
 		source =
@@ -269,9 +270,10 @@ table Schools
 				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
 				    Kept = Table.SelectColumns(Promoted, {"school_key", "school_name", "short_name", "suburb", "level", "opened", "latitude", "longitude", "grounds_m2", "shape_source", "lots", "outline_check", "vertical", "compare", "note", "wkt"}),
 				    Typed = Table.TransformColumnTypes(Kept, {{"school_key", Int64.Type}, {"school_name", type text}, {"short_name", type text}, {"suburb", type text}, {"level", type text}, {"opened", type date}, {"latitude", type number}, {"longitude", type number}, {"grounds_m2", type number}, {"shape_source", type text}, {"lots", type text}, {"outline_check", type text}, {"vertical", type logical}, {"compare", type logical}, {"note", type text}, {"wkt", type text}}, "en-AU"),
-				    Keyed = Table.AddColumn(Typed, "map_key", each Text.From([school_key]), type text)
+				    Keyed = Table.AddColumn(Typed, "map_key", each Text.From([school_key]), type text),
+				    ShortNames_short_name_axis = [#"Newtown HS of Performing Arts" = "Newtown HS", #"SSC Blackwattle Bay Campus" = "SSC Blackwattle Bay…"],
+				    Short_short_name_axis = Table.AddColumn(Keyed, "short_name_axis", each Record.FieldOrDefault(ShortNames_short_name_axis, [short_name], [short_name]), type text)
 				in
-				    Keyed
+				    Short_short_name_axis
 
 	annotation PBI_ResultType = Table
-

@@ -22,6 +22,17 @@
   },
   "resourcePackages": [
     {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
@@ -34,17 +45,6 @@
           "name": "schools.topojson",
           "path": "schools.topojson",
           "type": "ShapeMap"
-        }
-      ]
-    },
-    {
-      "name": "SharedResources",
-      "type": "SharedResources",
-      "items": [
-        {
-          "name": "CY24SU10",
-          "path": "BaseThemes/CY24SU10.json",
-          "type": "BaseTheme"
         }
       ]
     }

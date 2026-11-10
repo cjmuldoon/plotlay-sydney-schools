@@ -1,11 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "69b3f98787f354f623ef",
   "position": {
     "x": 1360,
-    "y": 110,
+    "y": 128,
     "z": 1,
-    "height": 900,
+    "height": 882,
     "width": 520,
     "tabOrder": 1
   },
@@ -28,7 +28,6 @@
               },
               "queryRef": "Schools.short_name",
               "nativeQueryRef": "short_name",
-              "active": true,
               "displayName": "School"
             }
           ]
@@ -48,7 +47,6 @@
               },
               "queryRef": "Schools.Grounds m2",
               "nativeQueryRef": "Grounds m2",
-              "active": true,
               "displayName": "Grounds (m²)"
             }
           ]
@@ -74,34 +72,7 @@
         }
       }
     },
-    "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -138,6 +109,33 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

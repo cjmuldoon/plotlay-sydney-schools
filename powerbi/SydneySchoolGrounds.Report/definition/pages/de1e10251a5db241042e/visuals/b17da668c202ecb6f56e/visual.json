@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "b17da668c202ecb6f56e",
   "position": {
     "x": 1260,
@@ -23,13 +23,13 @@
                       "Entity": "Schools"
                     }
                   },
-                  "Property": "short_name"
+                  "Property": "short_name_axis"
                 }
               },
-              "queryRef": "Schools.short_name",
-              "nativeQueryRef": "short_name",
-              "active": true,
-              "displayName": "School"
+              "queryRef": "Schools.short_name_axis",
+              "nativeQueryRef": "short_name_axis",
+              "displayName": "School",
+              "active": true
             }
           ]
         },
@@ -71,47 +71,7 @@
         ]
       }
     },
-    "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "labels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
+    "drillFilterOtherVisuals": true,
     "visualContainerObjects": {
       "title": [
         {
@@ -148,7 +108,54 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   },
   "filterConfig": {
     "filters": [
@@ -214,7 +221,7 @@
                 "Entity": "Schools"
               }
             },
-            "Property": "short_name"
+            "Property": "short_name_axis"
           }
         },
         "type": "TopN",
@@ -242,7 +249,7 @@
                               "Source": "s"
                             }
                           },
-                          "Property": "short_name"
+                          "Property": "short_name_axis"
                         },
                         "Name": "field"
                       }
@@ -286,7 +293,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "short_name"
+                        "Property": "short_name_axis"
                       }
                     }
                   ],
@@ -302,5 +309,11 @@
         }
       }
     ]
-  }
+  },
+  "annotations": [
+    {
+      "name": "plotlay.categoryLabels",
+      "value": "[\"Newtown HS\", \"SSC Blackwattle Bay…\"]"
+    }
+  ]
 }

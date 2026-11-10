@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "991e43ec45d1cd20e8ad",
   "position": {
-    "x": 39.288256227758005,
-    "y": 18.790035587188612,
+    "x": 40,
+    "y": 6,
     "z": 0,
-    "height": 76.868327402135222,
-    "width": 1521.9928825622776,
+    "height": 98,
+    "width": 1492,
     "tabOrder": 0
   },
   "visual": {
@@ -21,10 +21,10 @@
                   {
                     "value": "HOW MUCH GROUND DOES EACH STUDENT GET?",
                     "textStyle": {
-                      "fontWeight": "bold",
                       "fontSize": "24pt",
                       "color": "#163c6e",
-                      "fontFamily": "Segoe UI Semibold"
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontWeight": "bold"
                     }
                   }
                 ]

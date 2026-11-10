@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "61bf884ecee6678b49b0",
   "position": {
     "x": 40,
@@ -28,27 +28,8 @@
               },
               "queryRef": "Years.year",
               "nativeQueryRef": "year",
-              "active": true,
-              "displayName": "Year"
-            }
-          ]
-        },
-        "Series": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Schools"
-                    }
-                  },
-                  "Property": "short_name"
-                }
-              },
-              "queryRef": "Schools.short_name",
-              "nativeQueryRef": "short_name",
-              "displayName": "School"
+              "displayName": "Year",
+              "active": true
             }
           ]
         },
@@ -70,6 +51,25 @@
               "displayName": "Students"
             }
           ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Schools.short_name",
+              "nativeQueryRef": "short_name",
+              "displayName": "School"
+            }
+          ]
         }
       },
       "sortDefinition": {
@@ -89,6 +89,43 @@
           }
         ]
       }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'New schools (staged openings) and rebuilt schools'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "objects": {
       "categoryAxis": [
@@ -138,44 +175,7 @@
           }
         }
       ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'New schools (staged openings) and rebuilt schools'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI Semibold'"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "drillFilterOtherVisuals": true
+    }
   },
   "filterConfig": {
     "filters": [
@@ -265,50 +265,7 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "33a97819c2b028927bd5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Years"
-              }
-            },
-            "Property": "year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e55f16f3357720289cc7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "Students"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "44429f5e80b8a1a5342d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Schools"
-              }
-            },
-            "Property": "short_name"
-          }
-        },
-        "type": "Categorical"
+        }
       }
     ]
   }
